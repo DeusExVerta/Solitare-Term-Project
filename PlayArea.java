@@ -21,9 +21,7 @@ import java.util.Stack;
  */
 public class PlayArea
 {
-    
-
-   
+    SingleDeck deck;
     private final ArrayList<Stack<Card>> area= new ArrayList<>();
     
     private final ArrayList<LinkedPositionalList<Card>> areaUp=new ArrayList<>();
@@ -35,8 +33,9 @@ public class PlayArea
     private Stack<Card> discard= new Stack<Card>();
    
     
-    public PlayArea(SingleDeck S)
+    public PlayArea()
     {
+        this.deck=new SingleDeck();
         for(int i=0;i<7;i++)
         {
             area.add(new Stack<>());
@@ -45,14 +44,37 @@ public class PlayArea
             {
                 if(areaUp.get(i).isEmpty())
                 {
-                    areaUp.get(i).addFirst(S.draw());
+                    areaUp.get(i).addFirst(deck.draw());
                 }else
                 {
-                    area.get(i).add(S.draw());
+                    area.get(i).add(deck.draw());
                 }
             }
         }
-        discard.add(S.draw());
+        discard.add(deck.draw());
+    }
+    
+    public PlayArea(SingleDeck S,Stack<Card> discard,ScoreArea score)
+    {
+        this.deck=S;
+        this.discard=discard;
+        this.score=score;
+        for(int i=0;i<7;i++)
+        {
+            area.add(new Stack<>());
+            areaUp.add(new LinkedPositionalList<>());
+            for(int j=0;j<=i;j++)
+            {
+                if(areaUp.get(i).isEmpty())
+                {
+                    areaUp.get(i).addFirst(deck.draw());
+                }else
+                {
+                    area.get(i).add(deck.draw());
+                }
+            }
+        }
+        discard.add(deck.draw());
     }
     
     //adds the card c to the top of the face up list at specified index 
@@ -115,6 +137,10 @@ public class PlayArea
             if ( ( !discard.isEmpty() ) && this.moveTo(to, discard.peek()) )
             {
                 discard.pop();
+                if(discard.isEmpty()&&!deck.isEmpty())
+                {
+                    discard.add(deck.draw());
+                }
             }
         }
         else
@@ -170,6 +196,7 @@ public class PlayArea
     {
         StringBuilder sb= new StringBuilder();
         sb.append(discard.toString());
+        sb.append("\n");
         int index=0;
         for(Stack<Card> facedown:area)
         {
