@@ -27,96 +27,96 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             buttons[i] = new javax.swing.JButton[13];
         }
         {
-        buttons[0][0] = L1C1;
-        buttons[0][1] = L1C2;
-        buttons[0][2] = L1C3;
-        buttons[0][3] = L1C4;
-        buttons[0][4] = L1C5;
-        buttons[0][5] = L1C6;
-        buttons[0][6] = L1C7;
-        buttons[0][8] = L1C9;
-        buttons[0][9] = L1C10;
-        buttons[0][10] = L1C11;
-        buttons[0][11] = L1C12;
-        buttons[0][12] = L1C13;
-        buttons[1][0] = L2C1;
-        buttons[1][1] = L2C2;
-        buttons[1][2] = L2C3;
-        buttons[1][3] = L2C4;
-        buttons[1][4] = L2C5;
-        buttons[1][5] = L2C6;
-        buttons[1][6] = L2C7;
-        buttons[1][7] = L2C8;
-        buttons[1][8] = L2C9;
-        buttons[1][9] = L2C10;
-        buttons[1][10] = L2C11;
-        buttons[1][11] = L2C12;
-        buttons[1][12] = L2C13;
-        buttons[2][0] = L3C1;
-        buttons[3][0] = L4C1;
-        buttons[4][0] = L5C1;
-        buttons[5][0] = L6C1;
-        buttons[6][0] = L7C1;
-        buttons[2][1] = L3C2;
-        buttons[3][1] = L4C2;
-        buttons[4][1] = L5C2;
-        buttons[5][1] = L6C2;
-        buttons[6][1] = L7C2;
-        buttons[2][2] = L3C3;
-        buttons[3][2] = L4C3;
-        buttons[4][2] = L5C3;
-        buttons[5][2] = L6C3;
-        buttons[6][2] = L7C3;
-        buttons[2][3] = L3C4;
-        buttons[3][3] = L4C4;
-        buttons[4][3] = L5C4;
-        buttons[5][3] = L6C4;
-        buttons[6][3] = L7C4;
-        buttons[2][4] = L3C5;
-        buttons[3][4] = L4C5;
-        buttons[4][4] = L5C5;
-        buttons[5][4] = L6C5;
-        buttons[6][4] = L7C5;
-        buttons[2][5] = L3C6;
-        buttons[3][5] = L4C6;
-        buttons[4][5] = L5C6;
-        buttons[5][5] = L6C6;
-        buttons[6][5] = L7C6;
-        buttons[2][6] = L3C7;
-        buttons[3][6] = L4C7;
-        buttons[4][6] = L5C7;
-        buttons[5][6] = L6C7;
-        buttons[6][6] = L7C7;
-        buttons[2][7] = L3C8;
-        buttons[3][7] = L4C8;
-        buttons[4][7] = L5C8;
-        buttons[5][7] = L6C8;
-        buttons[6][7] = L7C8;
-        buttons[2][8] = L3C9;
-        buttons[3][8] = L4C9;
-        buttons[4][8] = L5C9;
-        buttons[5][8] = L6C9;
-        buttons[6][8] = L7C9;
-        buttons[2][9] = L3C10;
-        buttons[3][9] = L4C10;
-        buttons[4][9] = L5C10;
-        buttons[5][9] = L6C10;
-        buttons[6][9] = L7C10;
-        buttons[2][10] = L3C11;
-        buttons[3][10] = L4C11;
-        buttons[4][10] = L5C11;
-        buttons[5][10] = L6C11;
-        buttons[6][10] = L7C11;
-        buttons[2][11] = L3C12;
-        buttons[3][11] = L4C12;
-        buttons[4][11] = L5C12;
-        buttons[5][11] = L6C12;
-        buttons[6][11] = L7C12;
-        buttons[2][12] = L3C13;
-        buttons[3][12] = L4C13;
-        buttons[4][12] = L5C13;
-        buttons[5][12] = L6C13;
-        buttons[6][12] = L7C13;
+            buttons[0][0] = L1C1;
+            buttons[0][1] = L1C2;
+            buttons[0][2] = L1C3;
+            buttons[0][3] = L1C4;
+            buttons[0][4] = L1C5;
+            buttons[0][5] = L1C6;
+            buttons[0][6] = L1C7;
+            buttons[0][8] = L1C9;
+            buttons[0][9] = L1C10;
+            buttons[0][10] = L1C11;
+            buttons[0][11] = L1C12;
+            buttons[0][12] = L1C13;
+            buttons[1][0] = L2C1;
+            buttons[1][1] = L2C2;
+            buttons[1][2] = L2C3;
+            buttons[1][3] = L2C4;
+            buttons[1][4] = L2C5;
+            buttons[1][5] = L2C6;
+            buttons[1][6] = L2C7;
+            buttons[1][7] = L2C8;
+            buttons[1][8] = L2C9;
+            buttons[1][9] = L2C10;
+            buttons[1][10] = L2C11;
+            buttons[1][11] = L2C12;
+            buttons[1][12] = L2C13;
+            buttons[2][0] = L3C1;
+            buttons[3][0] = L4C1;
+            buttons[4][0] = L5C1;
+            buttons[5][0] = L6C1;
+            buttons[6][0] = L7C1;
+            buttons[2][1] = L3C2;
+            buttons[3][1] = L4C2;
+            buttons[4][1] = L5C2;
+            buttons[5][1] = L6C2;
+            buttons[6][1] = L7C2;
+            buttons[2][2] = L3C3;
+            buttons[3][2] = L4C3;
+            buttons[4][2] = L5C3;
+            buttons[5][2] = L6C3;
+            buttons[6][2] = L7C3;
+            buttons[2][3] = L3C4;
+            buttons[3][3] = L4C4;
+            buttons[4][3] = L5C4;
+            buttons[5][3] = L6C4;
+            buttons[6][3] = L7C4;
+            buttons[2][4] = L3C5;
+            buttons[3][4] = L4C5;
+            buttons[4][4] = L5C5;
+            buttons[5][4] = L6C5;
+            buttons[6][4] = L7C5;
+            buttons[2][5] = L3C6;
+            buttons[3][5] = L4C6;
+            buttons[4][5] = L5C6;
+            buttons[5][5] = L6C6;
+            buttons[6][5] = L7C6;
+            buttons[2][6] = L3C7;
+            buttons[3][6] = L4C7;
+            buttons[4][6] = L5C7;
+            buttons[5][6] = L6C7;
+            buttons[6][6] = L7C7;
+            buttons[2][7] = L3C8;
+            buttons[3][7] = L4C8;
+            buttons[4][7] = L5C8;
+            buttons[5][7] = L6C8;
+            buttons[6][7] = L7C8;
+            buttons[2][8] = L3C9;
+            buttons[3][8] = L4C9;
+            buttons[4][8] = L5C9;
+            buttons[5][8] = L6C9;
+            buttons[6][8] = L7C9;
+            buttons[2][9] = L3C10;
+            buttons[3][9] = L4C10;
+            buttons[4][9] = L5C10;
+            buttons[5][9] = L6C10;
+            buttons[6][9] = L7C10;
+            buttons[2][10] = L3C11;
+            buttons[3][10] = L4C11;
+            buttons[4][10] = L5C11;
+            buttons[5][10] = L6C11;
+            buttons[6][10] = L7C11;
+            buttons[2][11] = L3C12;
+            buttons[3][11] = L4C12;
+            buttons[4][11] = L5C12;
+            buttons[5][11] = L6C12;
+            buttons[6][11] = L7C12;
+            buttons[2][12] = L3C13;
+            buttons[3][12] = L4C13;
+            buttons[4][12] = L5C13;
+            buttons[5][12] = L6C13;
+            buttons[6][12] = L7C13;
         }
     }
 
@@ -276,7 +276,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         jLabel3.setText("Number of Cards");
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        jButton1.setText("Move");
         jButton1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -286,7 +285,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        jButton2.setText("Discard");
         jButton2.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -310,7 +308,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel17.setText("1");
 
         L1C2.setText("1");
@@ -489,12 +487,9 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         jLayeredPane11Layout.setHorizontalGroup(
             jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                        .addGap(0, 22, Short.MAX_VALUE)
-                        .addComponent(jLabel17))
-                    .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(L1C2)
                             .addComponent(L1C3)
@@ -508,17 +503,17 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                             .addComponent(L1C11)
                             .addComponent(L1C12)
                             .addComponent(L1C13)
-                            .addComponent(L1C1))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addComponent(L1C1)))
+                    .addComponent(jLabel17))
+                .addGap(0, 32, Short.MAX_VALUE))
         );
         jLayeredPane11Layout.setVerticalGroup(
             jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane11Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(188, 188, 188)
+                .addComponent(jLabel17)
+                .addGap(14, 14, 14)
                 .addComponent(L1C1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(L1C2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(L1C3)
@@ -560,7 +555,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel18.setText("1");
 
         L2C2.setText("1");
@@ -811,7 +806,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel16.setText("1");
 
         L4C2.setText("1");
@@ -1061,7 +1056,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel15.setText("1");
 
         L5C2.setText("1");
@@ -1313,7 +1308,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel14.setText("1");
 
         L6C2.setText("1");
@@ -1563,7 +1558,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel10.setText("1");
 
         L7C2.setText("1");
@@ -1814,7 +1809,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jLabel8.setText("1");
 
         L3C2.setText("1");
@@ -2083,7 +2078,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                     .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLayeredPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLayeredPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(443, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MakeMoveButton.setText("Move");
@@ -2105,10 +2100,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(moveTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))
@@ -2123,10 +2118,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                                     .addComponent(MoveDepth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3)))
                             .addComponent(MakeMoveButton)))
-                    .addComponent(PlayAreaTextOut))
+                    .addComponent(PlayAreaTextOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2147,12 +2142,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                                     .addComponent(MoveFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(MoveDepth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(MakeMoveButton)))
                         .addGap(27, 27, 27)
-                        .addComponent(PlayAreaTextOut)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(PlayAreaTextOut, javax.swing.GroupLayout.PREFERRED_SIZE, 612, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 232, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -2184,20 +2179,27 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
     private void MakeMoveButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_MakeMoveButtonActionPerformed
     {//GEN-HEADEREND:event_MakeMoveButtonActionPerformed
-        playArea.makeMove(moveTo.getSelectedIndex(), MoveFrom.getSelectedIndex(), MoveDepth.
-          getSelectedIndex()+1);
+        int indexTo = moveTo.getSelectedIndex();
+        int indexFrom = MoveFrom.getSelectedIndex();
+        playArea.makeMove(indexTo, indexFrom, MoveDepth.
+          getSelectedIndex() + 1);
         PlayAreaTextOut.setText(playArea.toString());
-        int i=0;
-        for(Card c:playArea.areaUp.get(moveTo.getSelectedIndex()))
+        int i = 0;
+        if ( 7 >= indexTo && indexTo >= 0 )
         {
-            try{
-            ImageIcon icon=new ImageIcon(c.getFace());
-            buttons[moveTo.getSelectedIndex()][i].setIcon(icon);
-            }catch(Exception ex)
+            for ( Card c : playArea.areaUp.get(indexTo) )
             {
-                
+                try
+                {
+                    ImageIcon icon = new ImageIcon(c.getFace());
+                    buttons[moveTo.getSelectedIndex()][i].setIcon(icon);
+                }
+                catch ( Exception ex )
+                {
+
+                }
+                i++;
             }
-            i++;
         }
     }//GEN-LAST:event_MakeMoveButtonActionPerformed
 

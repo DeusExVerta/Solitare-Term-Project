@@ -31,10 +31,10 @@
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jButton1" min="-2" pref="95" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="95" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="138" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" pref="143" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="moveTo" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -55,11 +55,11 @@
                           <Component id="MakeMoveButton" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="PlayAreaTextOut" min="-2" max="-2" attributes="0"/>
+                  <Component id="PlayAreaTextOut" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,14 +85,14 @@
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton1" alignment="3" min="-2" pref="145" max="-2" attributes="0"/>
-                              <Component id="jButton2" alignment="3" min="-2" pref="145" max="-2" attributes="0"/>
+                              <Component id="jButton1" alignment="3" min="-2" pref="209" max="-2" attributes="0"/>
+                              <Component id="jButton2" alignment="3" min="-2" pref="209" max="-2" attributes="0"/>
                               <Component id="MakeMoveButton" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="PlayAreaTextOut" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="PlayAreaTextOut" min="-2" pref="612" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="232" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -188,7 +188,6 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Move"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -199,7 +198,6 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Discard"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -242,7 +240,7 @@
                       <Component id="jLayeredPane12" min="-2" max="-2" attributes="0"/>
                       <Component id="jLayeredPane11" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="443" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -263,13 +261,9 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
-                              <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="L1C2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="L1C3" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -285,20 +279,20 @@
                                   <Component id="L1C13" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="L1C1" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
+                          <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel17" min="-2" pref="30" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
+                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Component id="L1C1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="L1C2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="L1C3" min="-2" max="-2" attributes="0"/>
@@ -345,7 +339,7 @@
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -619,7 +613,7 @@
             <Component class="javax.swing.JLabel" name="jLabel18">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -891,7 +885,7 @@
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -1166,7 +1160,7 @@
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -1438,7 +1432,7 @@
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -1710,7 +1704,7 @@
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
@@ -1985,7 +1979,7 @@
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/solitare/CardPNG/CardBackSmall.png"/>
+                  <Image iconType="3" name="/solitare/CardPNG/CardBack.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="1"/>
               </Properties>
