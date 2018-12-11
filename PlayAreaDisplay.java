@@ -22,12 +22,109 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     public PlayAreaDisplay()
     {
         initComponents();
+        for ( int i = 0; i < buttons.length; i++ )
+        {
+            buttons[i] = new javax.swing.JButton[13];
+        }
+        {
+        buttons[0][0] = L1C1;
+        buttons[0][1] = L1C2;
+        buttons[0][2] = L1C3;
+        buttons[0][3] = L1C4;
+        buttons[0][4] = L1C5;
+        buttons[0][5] = L1C6;
+        buttons[0][6] = L1C7;
+        buttons[0][8] = L1C9;
+        buttons[0][9] = L1C10;
+        buttons[0][10] = L1C11;
+        buttons[0][11] = L1C12;
+        buttons[0][12] = L1C13;
+        buttons[1][0] = L2C1;
+        buttons[1][1] = L2C2;
+        buttons[1][2] = L2C3;
+        buttons[1][3] = L2C4;
+        buttons[1][4] = L2C5;
+        buttons[1][5] = L2C6;
+        buttons[1][6] = L2C7;
+        buttons[1][7] = L2C8;
+        buttons[1][8] = L2C9;
+        buttons[1][9] = L2C10;
+        buttons[1][10] = L2C11;
+        buttons[1][11] = L2C12;
+        buttons[1][12] = L2C13;
+        buttons[2][0] = L3C1;
+        buttons[3][0] = L4C1;
+        buttons[4][0] = L5C1;
+        buttons[5][0] = L6C1;
+        buttons[6][0] = L7C1;
+        buttons[2][1] = L3C2;
+        buttons[3][1] = L4C2;
+        buttons[4][1] = L5C2;
+        buttons[5][1] = L6C2;
+        buttons[6][1] = L7C2;
+        buttons[2][2] = L3C3;
+        buttons[3][2] = L4C3;
+        buttons[4][2] = L5C3;
+        buttons[5][2] = L6C3;
+        buttons[6][2] = L7C3;
+        buttons[2][3] = L3C4;
+        buttons[3][3] = L4C4;
+        buttons[4][3] = L5C4;
+        buttons[5][3] = L6C4;
+        buttons[6][3] = L7C4;
+        buttons[2][4] = L3C5;
+        buttons[3][4] = L4C5;
+        buttons[4][4] = L5C5;
+        buttons[5][4] = L6C5;
+        buttons[6][4] = L7C5;
+        buttons[2][5] = L3C6;
+        buttons[3][5] = L4C6;
+        buttons[4][5] = L5C6;
+        buttons[5][5] = L6C6;
+        buttons[6][5] = L7C6;
+        buttons[2][6] = L3C7;
+        buttons[3][6] = L4C7;
+        buttons[4][6] = L5C7;
+        buttons[5][6] = L6C7;
+        buttons[6][6] = L7C7;
+        buttons[2][7] = L3C8;
+        buttons[3][7] = L4C8;
+        buttons[4][7] = L5C8;
+        buttons[5][7] = L6C8;
+        buttons[6][7] = L7C8;
+        buttons[2][8] = L3C9;
+        buttons[3][8] = L4C9;
+        buttons[4][8] = L5C9;
+        buttons[5][8] = L6C9;
+        buttons[6][8] = L7C9;
+        buttons[2][9] = L3C10;
+        buttons[3][9] = L4C10;
+        buttons[4][9] = L5C10;
+        buttons[5][9] = L6C10;
+        buttons[6][9] = L7C10;
+        buttons[2][10] = L3C11;
+        buttons[3][10] = L4C11;
+        buttons[4][10] = L5C11;
+        buttons[5][10] = L6C11;
+        buttons[6][10] = L7C11;
+        buttons[2][11] = L3C12;
+        buttons[3][11] = L4C12;
+        buttons[4][11] = L5C12;
+        buttons[5][11] = L6C12;
+        buttons[6][11] = L7C12;
+        buttons[2][12] = L3C13;
+        buttons[3][12] = L4C13;
+        buttons[4][12] = L5C13;
+        buttons[5][12] = L6C13;
+        buttons[6][12] = L7C13;
+        }
     }
 
-    SingleDeck singleDeck=new SingleDeck();
-    ScoreArea score=new ScoreArea();
-    Stack<Card> discard=new Stack<>();    
-    PlayArea playArea = new PlayArea(singleDeck,discard,score);
+    SingleDeck singleDeck = new SingleDeck();
+    ScoreArea score = new ScoreArea();
+    Stack<Card> discard = new Stack<>();
+    PlayArea playArea = new PlayArea(singleDeck, discard, score);
+    javax.swing.JButton[][] buttons = new javax.swing.JButton[7][];
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -39,6 +136,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private void initComponents()
     {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         moveTo = new javax.swing.JComboBox<>();
         MoveFrom = new javax.swing.JComboBox<>();
         MoveDepth = new javax.swing.JComboBox<>();
@@ -48,23 +146,119 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLayeredPane2 = new javax.swing.JLayeredPane();
-        jButton3 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLayeredPane3 = new javax.swing.JLayeredPane();
-        jLayeredPane4 = new javax.swing.JLayeredPane();
-        jLayeredPane5 = new javax.swing.JLayeredPane();
-        jLayeredPane6 = new javax.swing.JLayeredPane();
-        jLayeredPane7 = new javax.swing.JLayeredPane();
+        jLayeredPane11 = new javax.swing.JLayeredPane();
+        L1C1 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        L1C2 = new javax.swing.JButton();
+        L1C3 = new javax.swing.JButton();
+        L1C4 = new javax.swing.JButton();
+        L1C5 = new javax.swing.JButton();
+        L1C6 = new javax.swing.JButton();
+        L1C7 = new javax.swing.JButton();
+        L1C8 = new javax.swing.JButton();
+        L1C9 = new javax.swing.JButton();
+        L1C10 = new javax.swing.JButton();
+        L1C11 = new javax.swing.JButton();
+        L1C12 = new javax.swing.JButton();
+        L1C13 = new javax.swing.JButton();
+        jLayeredPane12 = new javax.swing.JLayeredPane();
+        L2C1 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        L2C2 = new javax.swing.JButton();
+        L2C3 = new javax.swing.JButton();
+        L2C4 = new javax.swing.JButton();
+        L2C5 = new javax.swing.JButton();
+        L2C6 = new javax.swing.JButton();
+        L2C7 = new javax.swing.JButton();
+        L2C8 = new javax.swing.JButton();
+        L2C9 = new javax.swing.JButton();
+        L2C10 = new javax.swing.JButton();
+        L2C11 = new javax.swing.JButton();
+        L2C12 = new javax.swing.JButton();
+        L2C13 = new javax.swing.JButton();
+        jLayeredPane10 = new javax.swing.JLayeredPane();
+        L4C1 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        L4C2 = new javax.swing.JButton();
+        L4C3 = new javax.swing.JButton();
+        L4C4 = new javax.swing.JButton();
+        L4C5 = new javax.swing.JButton();
+        L4C6 = new javax.swing.JButton();
+        L4C7 = new javax.swing.JButton();
+        L4C8 = new javax.swing.JButton();
+        L4C9 = new javax.swing.JButton();
+        L4C10 = new javax.swing.JButton();
+        L4C11 = new javax.swing.JButton();
+        L4C12 = new javax.swing.JButton();
+        L4C13 = new javax.swing.JButton();
         jLayeredPane8 = new javax.swing.JLayeredPane();
-        jLayeredPane9 = new javax.swing.JLayeredPane();
-        jButton4 = new javax.swing.JButton();
+        L5C1 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        L5C2 = new javax.swing.JButton();
+        L5C3 = new javax.swing.JButton();
+        L5C4 = new javax.swing.JButton();
+        L5C5 = new javax.swing.JButton();
+        L5C6 = new javax.swing.JButton();
+        L5C7 = new javax.swing.JButton();
+        L5C8 = new javax.swing.JButton();
+        L5C9 = new javax.swing.JButton();
+        L5C10 = new javax.swing.JButton();
+        L5C11 = new javax.swing.JButton();
+        L5C12 = new javax.swing.JButton();
+        L5C13 = new javax.swing.JButton();
+        jLayeredPane7 = new javax.swing.JLayeredPane();
+        L6C1 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        L6C2 = new javax.swing.JButton();
+        L6C3 = new javax.swing.JButton();
+        L6C4 = new javax.swing.JButton();
+        L6C5 = new javax.swing.JButton();
+        L6C6 = new javax.swing.JButton();
+        L6C7 = new javax.swing.JButton();
+        L6C8 = new javax.swing.JButton();
+        L6C9 = new javax.swing.JButton();
+        L6C10 = new javax.swing.JButton();
+        L6C11 = new javax.swing.JButton();
+        L6C12 = new javax.swing.JButton();
+        L6C13 = new javax.swing.JButton();
+        jLayeredPane3 = new javax.swing.JLayeredPane();
+        L7C1 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        L7C2 = new javax.swing.JButton();
+        L7C3 = new javax.swing.JButton();
+        L7C4 = new javax.swing.JButton();
+        L7C5 = new javax.swing.JButton();
+        L7C6 = new javax.swing.JButton();
+        L7C7 = new javax.swing.JButton();
+        L7C8 = new javax.swing.JButton();
+        L7C9 = new javax.swing.JButton();
+        L7C10 = new javax.swing.JButton();
+        L7C11 = new javax.swing.JButton();
+        L7C12 = new javax.swing.JButton();
+        L7C13 = new javax.swing.JButton();
+        jLayeredPane2 = new javax.swing.JLayeredPane();
+        L3C1 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        L3C2 = new javax.swing.JButton();
+        L3C3 = new javax.swing.JButton();
+        L3C4 = new javax.swing.JButton();
+        L3C5 = new javax.swing.JButton();
+        L3C6 = new javax.swing.JButton();
+        L3C7 = new javax.swing.JButton();
+        L3C8 = new javax.swing.JButton();
+        L3C9 = new javax.swing.JButton();
+        L3C10 = new javax.swing.JButton();
+        L3C11 = new javax.swing.JButton();
+        L3C12 = new javax.swing.JButton();
+        L3C13 = new javax.swing.JButton();
+        MakeMoveButton = new javax.swing.JButton();
+        PlayAreaTextOut = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        moveTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Discard", "Score" }));
+        moveTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Column 7", "Discard", "Score" }));
 
-        MoveFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Discard", "Score" }));
+        MoveFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Column 1", "Column 2", "Column 3", "Column 4", "Column 5", "Column 6", "Column 7", "Discard" }));
         MoveFrom.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -93,109 +287,1767 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
         jButton2.setText("Discard");
+        jButton2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Column 0");
+        jLayeredPane11.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
-        jLabel7.setText("jLabel7");
+        L1C1.setText("1");
+        L1C1.setBorderPainted(false);
+        buttonGroup1.add(L1C1);
+        L1C1.setContentAreaFilled(false);
+        L1C1.setFocusPainted(false);
+        L1C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C1ActionPerformed(evt);
+            }
+        });
 
-        jLayeredPane2.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel17.setText("1");
+
+        L1C2.setText("1");
+        L1C2.setBorderPainted(false);
+        buttonGroup1.add(L1C2);
+        L1C2.setContentAreaFilled(false);
+        L1C2.setFocusPainted(false);
+        L1C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C2ActionPerformed(evt);
+            }
+        });
+
+        L1C3.setText("1");
+        L1C3.setBorderPainted(false);
+        buttonGroup1.add(L1C3);
+        L1C3.setContentAreaFilled(false);
+        L1C3.setFocusPainted(false);
+        L1C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C3ActionPerformed(evt);
+            }
+        });
+
+        L1C4.setText("1");
+        L1C4.setBorderPainted(false);
+        buttonGroup1.add(L1C4);
+        L1C4.setContentAreaFilled(false);
+        L1C4.setFocusPainted(false);
+        L1C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C4ActionPerformed(evt);
+            }
+        });
+
+        L1C5.setText("1");
+        L1C5.setBorderPainted(false);
+        buttonGroup1.add(L1C5);
+        L1C5.setContentAreaFilled(false);
+        L1C5.setFocusPainted(false);
+        L1C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C5ActionPerformed(evt);
+            }
+        });
+
+        L1C6.setText("1");
+        L1C6.setBorderPainted(false);
+        buttonGroup1.add(L1C6);
+        L1C6.setContentAreaFilled(false);
+        L1C6.setFocusPainted(false);
+        L1C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C6ActionPerformed(evt);
+            }
+        });
+
+        L1C7.setText("1");
+        L1C7.setBorderPainted(false);
+        buttonGroup1.add(L1C7);
+        L1C7.setContentAreaFilled(false);
+        L1C7.setFocusPainted(false);
+        L1C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C7ActionPerformed(evt);
+            }
+        });
+
+        L1C8.setText("1");
+        L1C8.setBorderPainted(false);
+        buttonGroup1.add(L1C8);
+        L1C8.setContentAreaFilled(false);
+        L1C8.setFocusPainted(false);
+        L1C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C8ActionPerformed(evt);
+            }
+        });
+
+        L1C9.setText("1");
+        L1C9.setBorderPainted(false);
+        buttonGroup1.add(L1C9);
+        L1C9.setContentAreaFilled(false);
+        L1C9.setFocusPainted(false);
+        L1C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C9ActionPerformed(evt);
+            }
+        });
+
+        L1C10.setText("1");
+        L1C10.setBorderPainted(false);
+        buttonGroup1.add(L1C10);
+        L1C10.setContentAreaFilled(false);
+        L1C10.setFocusPainted(false);
+        L1C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C10ActionPerformed(evt);
+            }
+        });
+
+        L1C11.setText("1");
+        L1C11.setBorderPainted(false);
+        buttonGroup1.add(L1C11);
+        L1C11.setContentAreaFilled(false);
+        L1C11.setFocusPainted(false);
+        L1C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C11ActionPerformed(evt);
+            }
+        });
+
+        L1C12.setText("1");
+        L1C12.setBorderPainted(false);
+        buttonGroup1.add(L1C12);
+        L1C12.setContentAreaFilled(false);
+        L1C12.setFocusPainted(false);
+        L1C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C12ActionPerformed(evt);
+            }
+        });
+
+        L1C13.setText("1");
+        L1C13.setBorderPainted(false);
+        buttonGroup1.add(L1C13);
+        L1C13.setContentAreaFilled(false);
+        L1C13.setFocusPainted(false);
+        L1C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L1C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane11.setLayer(L1C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(L1C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane11Layout = new javax.swing.GroupLayout(jLayeredPane11);
+        jLayeredPane11.setLayout(jLayeredPane11Layout);
+        jLayeredPane11Layout.setHorizontalGroup(
+            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel17))
+                    .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L1C2)
+                            .addComponent(L1C3)
+                            .addComponent(L1C4)
+                            .addComponent(L1C5)
+                            .addComponent(L1C6)
+                            .addComponent(L1C7)
+                            .addComponent(L1C8)
+                            .addComponent(L1C9)
+                            .addComponent(L1C10)
+                            .addComponent(L1C11)
+                            .addComponent(L1C12)
+                            .addComponent(L1C13)
+                            .addComponent(L1C1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jLayeredPane11Layout.setVerticalGroup(
+            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(188, 188, 188)
+                .addComponent(L1C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L1C13)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jLayeredPane12.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L2C1.setText("1");
+        L2C1.setBorderPainted(false);
+        buttonGroup1.add(L2C1);
+        L2C1.setContentAreaFilled(false);
+        L2C1.setFocusPainted(false);
+        L2C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel18.setText("1");
+
+        L2C2.setText("1");
+        L2C2.setBorderPainted(false);
+        buttonGroup1.add(L2C2);
+        L2C2.setContentAreaFilled(false);
+        L2C2.setFocusPainted(false);
+        L2C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C2ActionPerformed(evt);
+            }
+        });
+
+        L2C3.setText("1");
+        L2C3.setBorderPainted(false);
+        buttonGroup1.add(L2C3);
+        L2C3.setContentAreaFilled(false);
+        L2C3.setFocusPainted(false);
+        L2C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C3ActionPerformed(evt);
+            }
+        });
+
+        L2C4.setText("1");
+        L2C4.setBorderPainted(false);
+        buttonGroup1.add(L2C4);
+        L2C4.setContentAreaFilled(false);
+        L2C4.setFocusPainted(false);
+        L2C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C4ActionPerformed(evt);
+            }
+        });
+
+        L2C5.setText("1");
+        L2C5.setBorderPainted(false);
+        buttonGroup1.add(L2C5);
+        L2C5.setContentAreaFilled(false);
+        L2C5.setFocusPainted(false);
+        L2C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C5ActionPerformed(evt);
+            }
+        });
+
+        L2C6.setText("1");
+        L2C6.setBorderPainted(false);
+        buttonGroup1.add(L2C6);
+        L2C6.setContentAreaFilled(false);
+        L2C6.setFocusPainted(false);
+        L2C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C6ActionPerformed(evt);
+            }
+        });
+
+        L2C7.setText("1");
+        L2C7.setBorderPainted(false);
+        buttonGroup1.add(L2C7);
+        L2C7.setContentAreaFilled(false);
+        L2C7.setFocusPainted(false);
+        L2C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C7ActionPerformed(evt);
+            }
+        });
+
+        L2C8.setText("1");
+        L2C8.setBorderPainted(false);
+        buttonGroup1.add(L2C8);
+        L2C8.setContentAreaFilled(false);
+        L2C8.setFocusPainted(false);
+        L2C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C8ActionPerformed(evt);
+            }
+        });
+
+        L2C9.setText("1");
+        L2C9.setBorderPainted(false);
+        buttonGroup1.add(L2C9);
+        L2C9.setContentAreaFilled(false);
+        L2C9.setFocusPainted(false);
+        L2C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C9ActionPerformed(evt);
+            }
+        });
+
+        L2C10.setText("1");
+        L2C10.setBorderPainted(false);
+        buttonGroup1.add(L2C10);
+        L2C10.setContentAreaFilled(false);
+        L2C10.setFocusPainted(false);
+        L2C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C10ActionPerformed(evt);
+            }
+        });
+
+        L2C11.setText("1");
+        L2C11.setBorderPainted(false);
+        buttonGroup1.add(L2C11);
+        L2C11.setContentAreaFilled(false);
+        L2C11.setFocusPainted(false);
+        L2C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C11ActionPerformed(evt);
+            }
+        });
+
+        L2C12.setText("1");
+        L2C12.setBorderPainted(false);
+        buttonGroup1.add(L2C12);
+        L2C12.setContentAreaFilled(false);
+        L2C12.setFocusPainted(false);
+        L2C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C12ActionPerformed(evt);
+            }
+        });
+
+        L2C13.setText("1");
+        L2C13.setBorderPainted(false);
+        buttonGroup1.add(L2C13);
+        L2C13.setContentAreaFilled(false);
+        L2C13.setFocusPainted(false);
+        L2C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L2C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane12.setLayer(L2C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane12.setLayer(L2C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane12Layout = new javax.swing.GroupLayout(jLayeredPane12);
+        jLayeredPane12.setLayout(jLayeredPane12Layout);
+        jLayeredPane12Layout.setHorizontalGroup(
+            jLayeredPane12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane12Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jLayeredPane12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel18)
+                            .addComponent(L2C1)))
+                    .addGroup(jLayeredPane12Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L2C2)
+                            .addComponent(L2C3)
+                            .addComponent(L2C4)
+                            .addComponent(L2C5)
+                            .addComponent(L2C6)
+                            .addComponent(L2C7)
+                            .addComponent(L2C8)
+                            .addComponent(L2C9)
+                            .addComponent(L2C10)
+                            .addComponent(L2C11)
+                            .addComponent(L2C12)
+                            .addComponent(L2C13))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jLayeredPane12Layout.setVerticalGroup(
+            jLayeredPane12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(186, 186, 186)
+                .addComponent(L2C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L2C13)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLayeredPane10.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L4C1.setText("1");
+        L4C1.setBorderPainted(false);
+        buttonGroup1.add(L4C1);
+        L4C1.setContentAreaFilled(false);
+        L4C1.setFocusPainted(false);
+        L4C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel16.setText("1");
+
+        L4C2.setText("1");
+        L4C2.setBorderPainted(false);
+        buttonGroup1.add(L4C2);
+        L4C2.setContentAreaFilled(false);
+        L4C2.setFocusPainted(false);
+        L4C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C2ActionPerformed(evt);
+            }
+        });
+
+        L4C3.setText("1");
+        L4C3.setBorderPainted(false);
+        buttonGroup1.add(L4C3);
+        L4C3.setContentAreaFilled(false);
+        L4C3.setFocusPainted(false);
+        L4C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C3ActionPerformed(evt);
+            }
+        });
+
+        L4C4.setText("1");
+        L4C4.setBorderPainted(false);
+        buttonGroup1.add(L4C4);
+        L4C4.setContentAreaFilled(false);
+        L4C4.setFocusPainted(false);
+        L4C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C4ActionPerformed(evt);
+            }
+        });
+
+        L4C5.setText("1");
+        L4C5.setBorderPainted(false);
+        buttonGroup1.add(L4C5);
+        L4C5.setContentAreaFilled(false);
+        L4C5.setFocusPainted(false);
+        L4C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C5ActionPerformed(evt);
+            }
+        });
+
+        L4C6.setText("1");
+        L4C6.setBorderPainted(false);
+        buttonGroup1.add(L4C6);
+        L4C6.setContentAreaFilled(false);
+        L4C6.setFocusPainted(false);
+        L4C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C6ActionPerformed(evt);
+            }
+        });
+
+        L4C7.setText("1");
+        L4C7.setBorderPainted(false);
+        buttonGroup1.add(L4C7);
+        L4C7.setContentAreaFilled(false);
+        L4C7.setFocusPainted(false);
+        L4C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C7ActionPerformed(evt);
+            }
+        });
+
+        L4C8.setText("1");
+        L4C8.setBorderPainted(false);
+        buttonGroup1.add(L4C8);
+        L4C8.setContentAreaFilled(false);
+        L4C8.setFocusPainted(false);
+        L4C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C8ActionPerformed(evt);
+            }
+        });
+
+        L4C9.setText("1");
+        L4C9.setBorderPainted(false);
+        buttonGroup1.add(L4C9);
+        L4C9.setContentAreaFilled(false);
+        L4C9.setFocusPainted(false);
+        L4C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C9ActionPerformed(evt);
+            }
+        });
+
+        L4C10.setText("1");
+        L4C10.setBorderPainted(false);
+        buttonGroup1.add(L4C10);
+        L4C10.setContentAreaFilled(false);
+        L4C10.setFocusPainted(false);
+        L4C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C10ActionPerformed(evt);
+            }
+        });
+
+        L4C11.setText("1");
+        L4C11.setBorderPainted(false);
+        buttonGroup1.add(L4C11);
+        L4C11.setContentAreaFilled(false);
+        L4C11.setFocusPainted(false);
+        L4C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C11ActionPerformed(evt);
+            }
+        });
+
+        L4C12.setText("1");
+        L4C12.setBorderPainted(false);
+        buttonGroup1.add(L4C12);
+        L4C12.setContentAreaFilled(false);
+        L4C12.setFocusPainted(false);
+        L4C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C12ActionPerformed(evt);
+            }
+        });
+
+        L4C13.setText("1");
+        L4C13.setBorderPainted(false);
+        buttonGroup1.add(L4C13);
+        L4C13.setContentAreaFilled(false);
+        L4C13.setFocusPainted(false);
+        L4C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L4C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane10.setLayer(L4C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane10.setLayer(L4C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane10Layout = new javax.swing.GroupLayout(jLayeredPane10);
+        jLayeredPane10.setLayout(jLayeredPane10Layout);
+        jLayeredPane10Layout.setHorizontalGroup(
+            jLayeredPane10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane10Layout.createSequentialGroup()
+                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel16))
+                    .addGroup(jLayeredPane10Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L4C2)
+                            .addComponent(L4C3)
+                            .addComponent(L4C4)
+                            .addComponent(L4C5)
+                            .addComponent(L4C6)
+                            .addComponent(L4C7)
+                            .addComponent(L4C8)
+                            .addComponent(L4C9)
+                            .addComponent(L4C10)
+                            .addComponent(L4C11)
+                            .addComponent(L4C12)
+                            .addComponent(L4C13)
+                            .addComponent(L4C1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jLayeredPane10Layout.setVerticalGroup(
+            jLayeredPane10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(189, 189, 189)
+                .addComponent(L4C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L4C13)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jLayeredPane8.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L5C1.setText("1");
+        L5C1.setBorderPainted(false);
+        buttonGroup1.add(L5C1);
+        L5C1.setContentAreaFilled(false);
+        L5C1.setFocusPainted(false);
+        L5C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel15.setText("1");
+
+        L5C2.setText("1");
+        L5C2.setBorderPainted(false);
+        buttonGroup1.add(L5C2);
+        L5C2.setContentAreaFilled(false);
+        L5C2.setFocusPainted(false);
+        L5C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C2ActionPerformed(evt);
+            }
+        });
+
+        L5C3.setText("1");
+        L5C3.setBorderPainted(false);
+        buttonGroup1.add(L5C3);
+        L5C3.setContentAreaFilled(false);
+        L5C3.setFocusPainted(false);
+        L5C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C3ActionPerformed(evt);
+            }
+        });
+
+        L5C4.setText("1");
+        L5C4.setBorderPainted(false);
+        buttonGroup1.add(L5C4);
+        L5C4.setContentAreaFilled(false);
+        L5C4.setFocusPainted(false);
+        L5C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C4ActionPerformed(evt);
+            }
+        });
+
+        L5C5.setText("1");
+        L5C5.setBorderPainted(false);
+        buttonGroup1.add(L5C5);
+        L5C5.setContentAreaFilled(false);
+        L5C5.setFocusPainted(false);
+        L5C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C5ActionPerformed(evt);
+            }
+        });
+
+        L5C6.setText("1");
+        L5C6.setBorderPainted(false);
+        buttonGroup1.add(L5C6);
+        L5C6.setContentAreaFilled(false);
+        L5C6.setFocusPainted(false);
+        L5C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C6ActionPerformed(evt);
+            }
+        });
+
+        L5C7.setText("1");
+        L5C7.setBorderPainted(false);
+        buttonGroup1.add(L5C7);
+        L5C7.setContentAreaFilled(false);
+        L5C7.setFocusPainted(false);
+        L5C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C7ActionPerformed(evt);
+            }
+        });
+
+        L5C8.setText("1");
+        L5C8.setBorderPainted(false);
+        buttonGroup1.add(L5C8);
+        L5C8.setContentAreaFilled(false);
+        L5C8.setFocusPainted(false);
+        L5C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C8ActionPerformed(evt);
+            }
+        });
+
+        L5C9.setText("1");
+        L5C9.setBorderPainted(false);
+        buttonGroup1.add(L5C9);
+        L5C9.setContentAreaFilled(false);
+        L5C9.setFocusPainted(false);
+        L5C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C9ActionPerformed(evt);
+            }
+        });
+
+        L5C10.setText("1");
+        L5C10.setBorderPainted(false);
+        buttonGroup1.add(L5C10);
+        L5C10.setContentAreaFilled(false);
+        L5C10.setFocusPainted(false);
+        L5C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C10ActionPerformed(evt);
+            }
+        });
+
+        L5C11.setText("1");
+        L5C11.setBorderPainted(false);
+        buttonGroup1.add(L5C11);
+        L5C11.setContentAreaFilled(false);
+        L5C11.setFocusPainted(false);
+        L5C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C11ActionPerformed(evt);
+            }
+        });
+
+        L5C12.setText("1");
+        L5C12.setBorderPainted(false);
+        buttonGroup1.add(L5C12);
+        L5C12.setContentAreaFilled(false);
+        L5C12.setFocusPainted(false);
+        L5C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C12ActionPerformed(evt);
+            }
+        });
+
+        L5C13.setText("1");
+        L5C13.setBorderPainted(false);
+        buttonGroup1.add(L5C13);
+        L5C13.setContentAreaFilled(false);
+        L5C13.setFocusPainted(false);
+        L5C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L5C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane8.setLayer(L5C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane8.setLayer(L5C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane8Layout = new javax.swing.GroupLayout(jLayeredPane8);
+        jLayeredPane8.setLayout(jLayeredPane8Layout);
+        jLayeredPane8Layout.setHorizontalGroup(
+            jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane8Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addComponent(L5C1)))
+                    .addGroup(jLayeredPane8Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L5C2)
+                            .addComponent(L5C3)
+                            .addComponent(L5C4)
+                            .addComponent(L5C5)
+                            .addComponent(L5C6)
+                            .addComponent(L5C7)
+                            .addComponent(L5C8)
+                            .addComponent(L5C9)
+                            .addComponent(L5C10)
+                            .addComponent(L5C11)
+                            .addComponent(L5C12)
+                            .addComponent(L5C13))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(19, 19, 19))
+        );
+        jLayeredPane8Layout.setVerticalGroup(
+            jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(191, 191, 191)
+                .addComponent(L5C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L5C13)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        jLayeredPane7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L6C1.setText("1");
+        L6C1.setBorderPainted(false);
+        buttonGroup1.add(L6C1);
+        L6C1.setContentAreaFilled(false);
+        L6C1.setFocusPainted(false);
+        L6C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel14.setText("1");
+
+        L6C2.setText("1");
+        L6C2.setBorderPainted(false);
+        buttonGroup1.add(L6C2);
+        L6C2.setContentAreaFilled(false);
+        L6C2.setFocusPainted(false);
+        L6C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C2ActionPerformed(evt);
+            }
+        });
+
+        L6C3.setText("1");
+        L6C3.setBorderPainted(false);
+        buttonGroup1.add(L6C3);
+        L6C3.setContentAreaFilled(false);
+        L6C3.setFocusPainted(false);
+        L6C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C3ActionPerformed(evt);
+            }
+        });
+
+        L6C4.setText("1");
+        L6C4.setBorderPainted(false);
+        buttonGroup1.add(L6C4);
+        L6C4.setContentAreaFilled(false);
+        L6C4.setFocusPainted(false);
+        L6C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C4ActionPerformed(evt);
+            }
+        });
+
+        L6C5.setText("1");
+        L6C5.setBorderPainted(false);
+        buttonGroup1.add(L6C5);
+        L6C5.setContentAreaFilled(false);
+        L6C5.setFocusPainted(false);
+        L6C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C5ActionPerformed(evt);
+            }
+        });
+
+        L6C6.setText("1");
+        L6C6.setBorderPainted(false);
+        buttonGroup1.add(L6C6);
+        L6C6.setContentAreaFilled(false);
+        L6C6.setFocusPainted(false);
+        L6C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C6ActionPerformed(evt);
+            }
+        });
+
+        L6C7.setText("1");
+        L6C7.setBorderPainted(false);
+        buttonGroup1.add(L6C7);
+        L6C7.setContentAreaFilled(false);
+        L6C7.setFocusPainted(false);
+        L6C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C7ActionPerformed(evt);
+            }
+        });
+
+        L6C8.setText("1");
+        L6C8.setBorderPainted(false);
+        buttonGroup1.add(L6C8);
+        L6C8.setContentAreaFilled(false);
+        L6C8.setFocusPainted(false);
+        L6C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C8ActionPerformed(evt);
+            }
+        });
+
+        L6C9.setText("1");
+        L6C9.setBorderPainted(false);
+        buttonGroup1.add(L6C9);
+        L6C9.setContentAreaFilled(false);
+        L6C9.setFocusPainted(false);
+        L6C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C9ActionPerformed(evt);
+            }
+        });
+
+        L6C10.setText("1");
+        L6C10.setBorderPainted(false);
+        buttonGroup1.add(L6C10);
+        L6C10.setContentAreaFilled(false);
+        L6C10.setFocusPainted(false);
+        L6C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C10ActionPerformed(evt);
+            }
+        });
+
+        L6C11.setText("1");
+        L6C11.setBorderPainted(false);
+        buttonGroup1.add(L6C11);
+        L6C11.setContentAreaFilled(false);
+        L6C11.setFocusPainted(false);
+        L6C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C11ActionPerformed(evt);
+            }
+        });
+
+        L6C12.setText("1");
+        L6C12.setBorderPainted(false);
+        buttonGroup1.add(L6C12);
+        L6C12.setContentAreaFilled(false);
+        L6C12.setFocusPainted(false);
+        L6C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C12ActionPerformed(evt);
+            }
+        });
+
+        L6C13.setText("1");
+        L6C13.setBorderPainted(false);
+        buttonGroup1.add(L6C13);
+        L6C13.setContentAreaFilled(false);
+        L6C13.setFocusPainted(false);
+        L6C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L6C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane7.setLayer(L6C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(jLabel14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane7.setLayer(L6C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane7Layout = new javax.swing.GroupLayout(jLayeredPane7);
+        jLayeredPane7.setLayout(jLayeredPane7Layout);
+        jLayeredPane7Layout.setHorizontalGroup(
+            jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane7Layout.createSequentialGroup()
+                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel14))
+                    .addGroup(jLayeredPane7Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L6C2)
+                            .addComponent(L6C3)
+                            .addComponent(L6C4)
+                            .addComponent(L6C5)
+                            .addComponent(L6C6)
+                            .addComponent(L6C7)
+                            .addComponent(L6C8)
+                            .addComponent(L6C9)
+                            .addComponent(L6C10)
+                            .addComponent(L6C11)
+                            .addComponent(L6C12)
+                            .addComponent(L6C13)
+                            .addComponent(L6C1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jLayeredPane7Layout.setVerticalGroup(
+            jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(187, 187, 187)
+                .addComponent(L6C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L6C13)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jLayeredPane3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L7C1.setText("1");
+        L7C1.setBorderPainted(false);
+        buttonGroup1.add(L7C1);
+        L7C1.setContentAreaFilled(false);
+        L7C1.setFocusPainted(false);
+        L7C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel10.setText("1");
+
+        L7C2.setText("1");
+        L7C2.setBorderPainted(false);
+        buttonGroup1.add(L7C2);
+        L7C2.setContentAreaFilled(false);
+        L7C2.setFocusPainted(false);
+        L7C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C2ActionPerformed(evt);
+            }
+        });
+
+        L7C3.setText("1");
+        L7C3.setBorderPainted(false);
+        buttonGroup1.add(L7C3);
+        L7C3.setContentAreaFilled(false);
+        L7C3.setFocusPainted(false);
+        L7C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C3ActionPerformed(evt);
+            }
+        });
+
+        L7C4.setText("1");
+        L7C4.setBorderPainted(false);
+        buttonGroup1.add(L7C4);
+        L7C4.setContentAreaFilled(false);
+        L7C4.setFocusPainted(false);
+        L7C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C4ActionPerformed(evt);
+            }
+        });
+
+        L7C5.setText("1");
+        L7C5.setBorderPainted(false);
+        buttonGroup1.add(L7C5);
+        L7C5.setContentAreaFilled(false);
+        L7C5.setFocusPainted(false);
+        L7C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C5ActionPerformed(evt);
+            }
+        });
+
+        L7C6.setText("1");
+        L7C6.setBorderPainted(false);
+        buttonGroup1.add(L7C6);
+        L7C6.setContentAreaFilled(false);
+        L7C6.setFocusPainted(false);
+        L7C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C6ActionPerformed(evt);
+            }
+        });
+
+        L7C7.setText("1");
+        L7C7.setBorderPainted(false);
+        buttonGroup1.add(L7C7);
+        L7C7.setContentAreaFilled(false);
+        L7C7.setFocusPainted(false);
+        L7C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C7ActionPerformed(evt);
+            }
+        });
+
+        L7C8.setText("1");
+        L7C8.setBorderPainted(false);
+        buttonGroup1.add(L7C8);
+        L7C8.setContentAreaFilled(false);
+        L7C8.setFocusPainted(false);
+        L7C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C8ActionPerformed(evt);
+            }
+        });
+
+        L7C9.setText("1");
+        L7C9.setBorderPainted(false);
+        buttonGroup1.add(L7C9);
+        L7C9.setContentAreaFilled(false);
+        L7C9.setFocusPainted(false);
+        L7C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C9ActionPerformed(evt);
+            }
+        });
+
+        L7C10.setText("1");
+        L7C10.setBorderPainted(false);
+        buttonGroup1.add(L7C10);
+        L7C10.setContentAreaFilled(false);
+        L7C10.setFocusPainted(false);
+        L7C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C10ActionPerformed(evt);
+            }
+        });
+
+        L7C11.setText("1");
+        L7C11.setBorderPainted(false);
+        buttonGroup1.add(L7C11);
+        L7C11.setContentAreaFilled(false);
+        L7C11.setFocusPainted(false);
+        L7C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C11ActionPerformed(evt);
+            }
+        });
+
+        L7C12.setText("1");
+        L7C12.setBorderPainted(false);
+        buttonGroup1.add(L7C12);
+        L7C12.setContentAreaFilled(false);
+        L7C12.setFocusPainted(false);
+        L7C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C12ActionPerformed(evt);
+            }
+        });
+
+        L7C13.setText("1");
+        L7C13.setBorderPainted(false);
+        buttonGroup1.add(L7C13);
+        L7C13.setContentAreaFilled(false);
+        L7C13.setFocusPainted(false);
+        L7C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L7C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane3.setLayer(L7C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(L7C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane3Layout = new javax.swing.GroupLayout(jLayeredPane3);
+        jLayeredPane3.setLayout(jLayeredPane3Layout);
+        jLayeredPane3Layout.setHorizontalGroup(
+            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel10))
+                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L7C2)
+                            .addComponent(L7C3)
+                            .addComponent(L7C4)
+                            .addComponent(L7C5)
+                            .addComponent(L7C6)
+                            .addComponent(L7C7)
+                            .addComponent(L7C8)
+                            .addComponent(L7C9)
+                            .addComponent(L7C10)
+                            .addComponent(L7C11)
+                            .addComponent(L7C12)
+                            .addComponent(L7C13)
+                            .addComponent(L7C1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jLayeredPane3Layout.setVerticalGroup(
+            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(183, 183, 183)
+                .addComponent(L7C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(L7C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L7C13)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+
+        jLayeredPane2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
+
+        L3C1.setText("1");
+        L3C1.setBorderPainted(false);
+        buttonGroup1.add(L3C1);
+        L3C1.setContentAreaFilled(false);
+        L3C1.setFocusPainted(false);
+        L3C1.setOpaque(false);
+        L3C1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C1ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBackSmall.png"))); // NOI18N
+        jLabel8.setText("1");
+
+        L3C2.setText("1");
+        L3C2.setBorderPainted(false);
+        buttonGroup1.add(L3C2);
+        L3C2.setContentAreaFilled(false);
+        L3C2.setFocusPainted(false);
+        L3C2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C2ActionPerformed(evt);
+            }
+        });
+
+        L3C3.setText("1");
+        L3C3.setBorderPainted(false);
+        buttonGroup1.add(L3C3);
+        L3C3.setContentAreaFilled(false);
+        L3C3.setFocusPainted(false);
+        L3C3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C3ActionPerformed(evt);
+            }
+        });
+
+        L3C4.setText("1");
+        L3C4.setBorderPainted(false);
+        buttonGroup1.add(L3C4);
+        L3C4.setContentAreaFilled(false);
+        L3C4.setFocusPainted(false);
+        L3C4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C4ActionPerformed(evt);
+            }
+        });
+
+        L3C5.setText("1");
+        L3C5.setBorderPainted(false);
+        buttonGroup1.add(L3C5);
+        L3C5.setContentAreaFilled(false);
+        L3C5.setFocusPainted(false);
+        L3C5.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C5ActionPerformed(evt);
+            }
+        });
+
+        L3C6.setText("1");
+        L3C6.setBorderPainted(false);
+        buttonGroup1.add(L3C6);
+        L3C6.setContentAreaFilled(false);
+        L3C6.setFocusPainted(false);
+        L3C6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C6ActionPerformed(evt);
+            }
+        });
+
+        L3C7.setText("1");
+        L3C7.setBorderPainted(false);
+        buttonGroup1.add(L3C7);
+        L3C7.setContentAreaFilled(false);
+        L3C7.setFocusPainted(false);
+        L3C7.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C7ActionPerformed(evt);
+            }
+        });
+
+        L3C8.setText("1");
+        L3C8.setBorderPainted(false);
+        buttonGroup1.add(L3C8);
+        L3C8.setContentAreaFilled(false);
+        L3C8.setFocusPainted(false);
+        L3C8.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C8ActionPerformed(evt);
+            }
+        });
+
+        L3C9.setText("1");
+        L3C9.setBorderPainted(false);
+        buttonGroup1.add(L3C9);
+        L3C9.setContentAreaFilled(false);
+        L3C9.setFocusPainted(false);
+        L3C9.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C9ActionPerformed(evt);
+            }
+        });
+
+        L3C10.setText("1");
+        L3C10.setBorderPainted(false);
+        buttonGroup1.add(L3C10);
+        L3C10.setContentAreaFilled(false);
+        L3C10.setFocusPainted(false);
+        L3C10.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C10ActionPerformed(evt);
+            }
+        });
+
+        L3C11.setText("1");
+        L3C11.setBorderPainted(false);
+        buttonGroup1.add(L3C11);
+        L3C11.setContentAreaFilled(false);
+        L3C11.setFocusPainted(false);
+        L3C11.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C11ActionPerformed(evt);
+            }
+        });
+
+        L3C12.setText("1");
+        L3C12.setBorderPainted(false);
+        buttonGroup1.add(L3C12);
+        L3C12.setContentAreaFilled(false);
+        L3C12.setFocusPainted(false);
+        L3C12.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C12ActionPerformed(evt);
+            }
+        });
+
+        L3C13.setText("1");
+        L3C13.setBorderPainted(false);
+        buttonGroup1.add(L3C13);
+        L3C13.setContentAreaFilled(false);
+        L3C13.setFocusPainted(false);
+        L3C13.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                L3C13ActionPerformed(evt);
+            }
+        });
+
+        jLayeredPane2.setLayer(L3C1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane2.setLayer(L3C13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
         jLayeredPane2.setLayout(jLayeredPane2Layout);
         jLayeredPane2Layout.setHorizontalGroup(
             jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jButton3))
-                .addGap(0, 11, Short.MAX_VALUE))
+                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(L3C1)))
+                    .addGroup(jLayeredPane2Layout.createSequentialGroup()
+                        .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L3C2)
+                            .addComponent(L3C3)
+                            .addComponent(L3C4)
+                            .addComponent(L3C5)
+                            .addComponent(L3C6)
+                            .addComponent(L3C7)
+                            .addComponent(L3C8)
+                            .addComponent(L3C9)
+                            .addComponent(L3C10)
+                            .addComponent(L3C11)
+                            .addComponent(L3C12)
+                            .addComponent(L3C13))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jLayeredPane2Layout.setVerticalGroup(
             jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
-                .addGap(108, 108, 108))
-        );
-
-        javax.swing.GroupLayout jLayeredPane3Layout = new javax.swing.GroupLayout(jLayeredPane3);
-        jLayeredPane3.setLayout(jLayeredPane3Layout);
-        jLayeredPane3Layout.setHorizontalGroup(
-            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane3Layout.setVerticalGroup(
-            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane4Layout = new javax.swing.GroupLayout(jLayeredPane4);
-        jLayeredPane4.setLayout(jLayeredPane4Layout);
-        jLayeredPane4Layout.setHorizontalGroup(
-            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane4Layout.setVerticalGroup(
-            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane5Layout = new javax.swing.GroupLayout(jLayeredPane5);
-        jLayeredPane5.setLayout(jLayeredPane5Layout);
-        jLayeredPane5Layout.setHorizontalGroup(
-            jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane5Layout.setVerticalGroup(
-            jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane6Layout = new javax.swing.GroupLayout(jLayeredPane6);
-        jLayeredPane6.setLayout(jLayeredPane6Layout);
-        jLayeredPane6Layout.setHorizontalGroup(
-            jLayeredPane6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane6Layout.setVerticalGroup(
-            jLayeredPane6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane7Layout = new javax.swing.GroupLayout(jLayeredPane7);
-        jLayeredPane7.setLayout(jLayeredPane7Layout);
-        jLayeredPane7Layout.setHorizontalGroup(
-            jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane7Layout.setVerticalGroup(
-            jLayeredPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane8Layout = new javax.swing.GroupLayout(jLayeredPane8);
-        jLayeredPane8.setLayout(jLayeredPane8Layout);
-        jLayeredPane8Layout.setHorizontalGroup(
-            jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane8Layout.setVerticalGroup(
-            jLayeredPane8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jLayeredPane9Layout = new javax.swing.GroupLayout(jLayeredPane9);
-        jLayeredPane9.setLayout(jLayeredPane9Layout);
-        jLayeredPane9Layout.setHorizontalGroup(
-            jLayeredPane9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jLayeredPane9Layout.setVerticalGroup(
-            jLayeredPane9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(183, 183, 183)
+                .addComponent(L3C1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L3C13)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -204,60 +2056,59 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLayeredPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLayeredPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(395, Short.MAX_VALUE))
+                    .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLayeredPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLayeredPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(443, Short.MAX_VALUE))
         );
 
-        jButton4.setText("Move");
-        jButton4.addActionListener(new java.awt.event.ActionListener()
+        MakeMoveButton.setText("Move");
+        MakeMoveButton.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton4ActionPerformed(evt);
+                MakeMoveButtonActionPerformed(evt);
             }
         });
+
+        PlayAreaTextOut.setText("playAreaTextOut");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(moveTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))
@@ -271,33 +2122,37 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(MoveDepth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3)))
-                            .addComponent(jButton4)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                            .addComponent(MakeMoveButton)))
+                    .addComponent(PlayAreaTextOut))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(moveTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MoveFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MoveDepth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton4)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(moveTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MoveFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MoveDepth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(MakeMoveButton)))
+                        .addGap(27, 27, 27)
+                        .addComponent(PlayAreaTextOut)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -309,9 +2164,9 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
         try
         {
-            if(singleDeck.isEmpty())
+            if ( singleDeck.isEmpty() )
             {
-                while(!discard.isEmpty())
+                while ( !discard.isEmpty() )
                 {
                     singleDeck.push(discard.pop());
                 }
@@ -327,15 +2182,502 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton4ActionPerformed
-    {//GEN-HEADEREND:event_jButton4ActionPerformed
-        playArea.makeMove(moveTo.getSelectedIndex(), MoveFrom.getSelectedIndex(), (int)MoveDepth.getSelectedItem());
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void MakeMoveButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_MakeMoveButtonActionPerformed
+    {//GEN-HEADEREND:event_MakeMoveButtonActionPerformed
+        playArea.makeMove(moveTo.getSelectedIndex(), MoveFrom.getSelectedIndex(), MoveDepth.
+          getSelectedIndex()+1);
+        PlayAreaTextOut.setText(playArea.toString());
+        int i=0;
+        for(Card c:playArea.areaUp.get(moveTo.getSelectedIndex()))
+        {
+            try{
+            ImageIcon icon=new ImageIcon(c.getFace());
+            buttons[moveTo.getSelectedIndex()][i].setIcon(icon);
+            }catch(Exception ex)
+            {
+                
+            }
+            i++;
+        }
+    }//GEN-LAST:event_MakeMoveButtonActionPerformed
 
     private void MoveFromActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_MoveFromActionPerformed
     {//GEN-HEADEREND:event_MoveFromActionPerformed
-        // TODO add your handling code here:
+        MoveDepth.removeAllItems();
+        int selection = MoveFrom.getSelectedIndex();
+        switch ( selection )
+        {
+            case 7:
+                MoveDepth.addItem(discard.peek().toString());
+                break;
+            default:
+                for ( Card c : playArea.areaUp.get(selection) )
+                {
+                    MoveDepth.addItem(c.toString());
+                }
+                break;
+        }
     }//GEN-LAST:event_MoveFromActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton2ActionPerformed
+    {//GEN-HEADEREND:event_jButton2ActionPerformed
+        MoveFrom.setSelectedItem("Discard");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void L3C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C1ActionPerformed
+    {//GEN-HEADEREND:event_L3C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C1ActionPerformed
+
+    private void L3C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C2ActionPerformed
+    {//GEN-HEADEREND:event_L3C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C2ActionPerformed
+
+    private void L3C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C3ActionPerformed
+    {//GEN-HEADEREND:event_L3C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C3ActionPerformed
+
+    private void L3C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C4ActionPerformed
+    {//GEN-HEADEREND:event_L3C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C4ActionPerformed
+
+    private void L3C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C5ActionPerformed
+    {//GEN-HEADEREND:event_L3C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C5ActionPerformed
+
+    private void L3C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C6ActionPerformed
+    {//GEN-HEADEREND:event_L3C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C6ActionPerformed
+
+    private void L3C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C7ActionPerformed
+    {//GEN-HEADEREND:event_L3C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C7ActionPerformed
+
+    private void L3C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C8ActionPerformed
+    {//GEN-HEADEREND:event_L3C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C8ActionPerformed
+
+    private void L3C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C9ActionPerformed
+    {//GEN-HEADEREND:event_L3C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C9ActionPerformed
+
+    private void L3C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C10ActionPerformed
+    {//GEN-HEADEREND:event_L3C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C10ActionPerformed
+
+    private void L3C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C11ActionPerformed
+    {//GEN-HEADEREND:event_L3C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C11ActionPerformed
+
+    private void L3C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C12ActionPerformed
+    {//GEN-HEADEREND:event_L3C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C12ActionPerformed
+
+    private void L3C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C13ActionPerformed
+    {//GEN-HEADEREND:event_L3C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L3C13ActionPerformed
+
+    private void L7C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C1ActionPerformed
+    {//GEN-HEADEREND:event_L7C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C1ActionPerformed
+
+    private void L7C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C2ActionPerformed
+    {//GEN-HEADEREND:event_L7C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C2ActionPerformed
+
+    private void L7C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C3ActionPerformed
+    {//GEN-HEADEREND:event_L7C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C3ActionPerformed
+
+    private void L7C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C4ActionPerformed
+    {//GEN-HEADEREND:event_L7C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C4ActionPerformed
+
+    private void L7C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C5ActionPerformed
+    {//GEN-HEADEREND:event_L7C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C5ActionPerformed
+
+    private void L7C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C6ActionPerformed
+    {//GEN-HEADEREND:event_L7C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C6ActionPerformed
+
+    private void L7C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C7ActionPerformed
+    {//GEN-HEADEREND:event_L7C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C7ActionPerformed
+
+    private void L7C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C8ActionPerformed
+    {//GEN-HEADEREND:event_L7C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C8ActionPerformed
+
+    private void L7C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C9ActionPerformed
+    {//GEN-HEADEREND:event_L7C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C9ActionPerformed
+
+    private void L7C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C10ActionPerformed
+    {//GEN-HEADEREND:event_L7C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C10ActionPerformed
+
+    private void L7C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C11ActionPerformed
+    {//GEN-HEADEREND:event_L7C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C11ActionPerformed
+
+    private void L7C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C12ActionPerformed
+    {//GEN-HEADEREND:event_L7C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C12ActionPerformed
+
+    private void L7C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L7C13ActionPerformed
+    {//GEN-HEADEREND:event_L7C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L7C13ActionPerformed
+
+    private void L6C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C1ActionPerformed
+    {//GEN-HEADEREND:event_L6C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C1ActionPerformed
+
+    private void L6C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C2ActionPerformed
+    {//GEN-HEADEREND:event_L6C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C2ActionPerformed
+
+    private void L6C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C3ActionPerformed
+    {//GEN-HEADEREND:event_L6C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C3ActionPerformed
+
+    private void L6C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C4ActionPerformed
+    {//GEN-HEADEREND:event_L6C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C4ActionPerformed
+
+    private void L6C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C5ActionPerformed
+    {//GEN-HEADEREND:event_L6C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C5ActionPerformed
+
+    private void L6C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C6ActionPerformed
+    {//GEN-HEADEREND:event_L6C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C6ActionPerformed
+
+    private void L6C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C7ActionPerformed
+    {//GEN-HEADEREND:event_L6C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C7ActionPerformed
+
+    private void L6C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C8ActionPerformed
+    {//GEN-HEADEREND:event_L6C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C8ActionPerformed
+
+    private void L6C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C9ActionPerformed
+    {//GEN-HEADEREND:event_L6C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C9ActionPerformed
+
+    private void L6C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C10ActionPerformed
+    {//GEN-HEADEREND:event_L6C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C10ActionPerformed
+
+    private void L6C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C11ActionPerformed
+    {//GEN-HEADEREND:event_L6C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C11ActionPerformed
+
+    private void L6C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C12ActionPerformed
+    {//GEN-HEADEREND:event_L6C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C12ActionPerformed
+
+    private void L6C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L6C13ActionPerformed
+    {//GEN-HEADEREND:event_L6C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L6C13ActionPerformed
+
+    private void L5C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C1ActionPerformed
+    {//GEN-HEADEREND:event_L5C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C1ActionPerformed
+
+    private void L5C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C2ActionPerformed
+    {//GEN-HEADEREND:event_L5C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C2ActionPerformed
+
+    private void L5C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C3ActionPerformed
+    {//GEN-HEADEREND:event_L5C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C3ActionPerformed
+
+    private void L5C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C4ActionPerformed
+    {//GEN-HEADEREND:event_L5C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C4ActionPerformed
+
+    private void L5C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C5ActionPerformed
+    {//GEN-HEADEREND:event_L5C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C5ActionPerformed
+
+    private void L5C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C6ActionPerformed
+    {//GEN-HEADEREND:event_L5C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C6ActionPerformed
+
+    private void L5C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C7ActionPerformed
+    {//GEN-HEADEREND:event_L5C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C7ActionPerformed
+
+    private void L5C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C8ActionPerformed
+    {//GEN-HEADEREND:event_L5C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C8ActionPerformed
+
+    private void L5C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C9ActionPerformed
+    {//GEN-HEADEREND:event_L5C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C9ActionPerformed
+
+    private void L5C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C10ActionPerformed
+    {//GEN-HEADEREND:event_L5C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C10ActionPerformed
+
+    private void L5C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C11ActionPerformed
+    {//GEN-HEADEREND:event_L5C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C11ActionPerformed
+
+    private void L5C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C12ActionPerformed
+    {//GEN-HEADEREND:event_L5C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C12ActionPerformed
+
+    private void L5C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L5C13ActionPerformed
+    {//GEN-HEADEREND:event_L5C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L5C13ActionPerformed
+
+    private void L4C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C1ActionPerformed
+    {//GEN-HEADEREND:event_L4C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C1ActionPerformed
+
+    private void L4C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C2ActionPerformed
+    {//GEN-HEADEREND:event_L4C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C2ActionPerformed
+
+    private void L4C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C3ActionPerformed
+    {//GEN-HEADEREND:event_L4C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C3ActionPerformed
+
+    private void L4C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C4ActionPerformed
+    {//GEN-HEADEREND:event_L4C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C4ActionPerformed
+
+    private void L4C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C5ActionPerformed
+    {//GEN-HEADEREND:event_L4C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C5ActionPerformed
+
+    private void L4C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C6ActionPerformed
+    {//GEN-HEADEREND:event_L4C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C6ActionPerformed
+
+    private void L4C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C7ActionPerformed
+    {//GEN-HEADEREND:event_L4C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C7ActionPerformed
+
+    private void L4C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C8ActionPerformed
+    {//GEN-HEADEREND:event_L4C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C8ActionPerformed
+
+    private void L4C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C9ActionPerformed
+    {//GEN-HEADEREND:event_L4C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C9ActionPerformed
+
+    private void L4C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C10ActionPerformed
+    {//GEN-HEADEREND:event_L4C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C10ActionPerformed
+
+    private void L4C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C11ActionPerformed
+    {//GEN-HEADEREND:event_L4C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C11ActionPerformed
+
+    private void L4C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C12ActionPerformed
+    {//GEN-HEADEREND:event_L4C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C12ActionPerformed
+
+    private void L4C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L4C13ActionPerformed
+    {//GEN-HEADEREND:event_L4C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L4C13ActionPerformed
+
+    private void L1C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C1ActionPerformed
+    {//GEN-HEADEREND:event_L1C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C1ActionPerformed
+
+    private void L1C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C2ActionPerformed
+    {//GEN-HEADEREND:event_L1C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C2ActionPerformed
+
+    private void L1C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C3ActionPerformed
+    {//GEN-HEADEREND:event_L1C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C3ActionPerformed
+
+    private void L1C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C4ActionPerformed
+    {//GEN-HEADEREND:event_L1C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C4ActionPerformed
+
+    private void L1C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C5ActionPerformed
+    {//GEN-HEADEREND:event_L1C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C5ActionPerformed
+
+    private void L1C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C6ActionPerformed
+    {//GEN-HEADEREND:event_L1C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C6ActionPerformed
+
+    private void L1C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C7ActionPerformed
+    {//GEN-HEADEREND:event_L1C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C7ActionPerformed
+
+    private void L1C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C8ActionPerformed
+    {//GEN-HEADEREND:event_L1C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C8ActionPerformed
+
+    private void L1C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C9ActionPerformed
+    {//GEN-HEADEREND:event_L1C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C9ActionPerformed
+
+    private void L1C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C10ActionPerformed
+    {//GEN-HEADEREND:event_L1C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C10ActionPerformed
+
+    private void L1C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C11ActionPerformed
+    {//GEN-HEADEREND:event_L1C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C11ActionPerformed
+
+    private void L1C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C12ActionPerformed
+    {//GEN-HEADEREND:event_L1C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C12ActionPerformed
+
+    private void L1C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L1C13ActionPerformed
+    {//GEN-HEADEREND:event_L1C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L1C13ActionPerformed
+
+    private void L2C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C1ActionPerformed
+    {//GEN-HEADEREND:event_L2C1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C1ActionPerformed
+
+    private void L2C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C2ActionPerformed
+    {//GEN-HEADEREND:event_L2C2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C2ActionPerformed
+
+    private void L2C3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C3ActionPerformed
+    {//GEN-HEADEREND:event_L2C3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C3ActionPerformed
+
+    private void L2C4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C4ActionPerformed
+    {//GEN-HEADEREND:event_L2C4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C4ActionPerformed
+
+    private void L2C5ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C5ActionPerformed
+    {//GEN-HEADEREND:event_L2C5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C5ActionPerformed
+
+    private void L2C6ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C6ActionPerformed
+    {//GEN-HEADEREND:event_L2C6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C6ActionPerformed
+
+    private void L2C7ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C7ActionPerformed
+    {//GEN-HEADEREND:event_L2C7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C7ActionPerformed
+
+    private void L2C8ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C8ActionPerformed
+    {//GEN-HEADEREND:event_L2C8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C8ActionPerformed
+
+    private void L2C9ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C9ActionPerformed
+    {//GEN-HEADEREND:event_L2C9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C9ActionPerformed
+
+    private void L2C10ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C10ActionPerformed
+    {//GEN-HEADEREND:event_L2C10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C10ActionPerformed
+
+    private void L2C11ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C11ActionPerformed
+    {//GEN-HEADEREND:event_L2C11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C11ActionPerformed
+
+    private void L2C12ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C12ActionPerformed
+    {//GEN-HEADEREND:event_L2C12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C12ActionPerformed
+
+    private void L2C13ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L2C13ActionPerformed
+    {//GEN-HEADEREND:event_L2C13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_L2C13ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -395,16 +2737,173 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton L1C1;
+    private javax.swing.JButton L1C10;
+    private javax.swing.JButton L1C11;
+    private javax.swing.JButton L1C12;
+    private javax.swing.JButton L1C13;
+    private javax.swing.JButton L1C2;
+    private javax.swing.JButton L1C27;
+    private javax.swing.JButton L1C28;
+    private javax.swing.JButton L1C29;
+    private javax.swing.JButton L1C3;
+    private javax.swing.JButton L1C30;
+    private javax.swing.JButton L1C31;
+    private javax.swing.JButton L1C32;
+    private javax.swing.JButton L1C33;
+    private javax.swing.JButton L1C34;
+    private javax.swing.JButton L1C35;
+    private javax.swing.JButton L1C36;
+    private javax.swing.JButton L1C37;
+    private javax.swing.JButton L1C38;
+    private javax.swing.JButton L1C39;
+    private javax.swing.JButton L1C4;
+    private javax.swing.JButton L1C40;
+    private javax.swing.JButton L1C41;
+    private javax.swing.JButton L1C42;
+    private javax.swing.JButton L1C43;
+    private javax.swing.JButton L1C44;
+    private javax.swing.JButton L1C45;
+    private javax.swing.JButton L1C46;
+    private javax.swing.JButton L1C47;
+    private javax.swing.JButton L1C48;
+    private javax.swing.JButton L1C49;
+    private javax.swing.JButton L1C5;
+    private javax.swing.JButton L1C50;
+    private javax.swing.JButton L1C51;
+    private javax.swing.JButton L1C52;
+    private javax.swing.JButton L1C53;
+    private javax.swing.JButton L1C54;
+    private javax.swing.JButton L1C55;
+    private javax.swing.JButton L1C56;
+    private javax.swing.JButton L1C57;
+    private javax.swing.JButton L1C58;
+    private javax.swing.JButton L1C59;
+    private javax.swing.JButton L1C6;
+    private javax.swing.JButton L1C60;
+    private javax.swing.JButton L1C61;
+    private javax.swing.JButton L1C62;
+    private javax.swing.JButton L1C63;
+    private javax.swing.JButton L1C64;
+    private javax.swing.JButton L1C65;
+    private javax.swing.JButton L1C7;
+    private javax.swing.JButton L1C8;
+    private javax.swing.JButton L1C9;
+    private javax.swing.JButton L2C1;
+    private javax.swing.JButton L2C10;
+    private javax.swing.JButton L2C11;
+    private javax.swing.JButton L2C12;
+    private javax.swing.JButton L2C13;
+    private javax.swing.JButton L2C2;
+    private javax.swing.JButton L2C3;
+    private javax.swing.JButton L2C4;
+    private javax.swing.JButton L2C5;
+    private javax.swing.JButton L2C6;
+    private javax.swing.JButton L2C7;
+    private javax.swing.JButton L2C8;
+    private javax.swing.JButton L2C9;
+    private javax.swing.JButton L3C1;
+    private javax.swing.JButton L3C10;
+    private javax.swing.JButton L3C11;
+    private javax.swing.JButton L3C12;
+    private javax.swing.JButton L3C13;
+    private javax.swing.JButton L3C2;
+    private javax.swing.JButton L3C3;
+    private javax.swing.JButton L3C4;
+    private javax.swing.JButton L3C5;
+    private javax.swing.JButton L3C6;
+    private javax.swing.JButton L3C7;
+    private javax.swing.JButton L3C8;
+    private javax.swing.JButton L3C9;
+    private javax.swing.JButton L4C1;
+    private javax.swing.JButton L4C10;
+    private javax.swing.JButton L4C11;
+    private javax.swing.JButton L4C12;
+    private javax.swing.JButton L4C13;
+    private javax.swing.JButton L4C2;
+    private javax.swing.JButton L4C3;
+    private javax.swing.JButton L4C4;
+    private javax.swing.JButton L4C5;
+    private javax.swing.JButton L4C6;
+    private javax.swing.JButton L4C7;
+    private javax.swing.JButton L4C8;
+    private javax.swing.JButton L4C9;
+    private javax.swing.JButton L5C1;
+    private javax.swing.JButton L5C10;
+    private javax.swing.JButton L5C11;
+    private javax.swing.JButton L5C12;
+    private javax.swing.JButton L5C13;
+    private javax.swing.JButton L5C2;
+    private javax.swing.JButton L5C3;
+    private javax.swing.JButton L5C4;
+    private javax.swing.JButton L5C5;
+    private javax.swing.JButton L5C6;
+    private javax.swing.JButton L5C7;
+    private javax.swing.JButton L5C8;
+    private javax.swing.JButton L5C9;
+    private javax.swing.JButton L6C1;
+    private javax.swing.JButton L6C10;
+    private javax.swing.JButton L6C11;
+    private javax.swing.JButton L6C12;
+    private javax.swing.JButton L6C13;
+    private javax.swing.JButton L6C2;
+    private javax.swing.JButton L6C3;
+    private javax.swing.JButton L6C4;
+    private javax.swing.JButton L6C5;
+    private javax.swing.JButton L6C6;
+    private javax.swing.JButton L6C7;
+    private javax.swing.JButton L6C8;
+    private javax.swing.JButton L6C9;
+    private javax.swing.JButton L7C1;
+    private javax.swing.JButton L7C10;
+    private javax.swing.JButton L7C11;
+    private javax.swing.JButton L7C12;
+    private javax.swing.JButton L7C13;
+    private javax.swing.JButton L7C2;
+    private javax.swing.JButton L7C3;
+    private javax.swing.JButton L7C4;
+    private javax.swing.JButton L7C5;
+    private javax.swing.JButton L7C6;
+    private javax.swing.JButton L7C7;
+    private javax.swing.JButton L7C8;
+    private javax.swing.JButton L7C9;
+    private javax.swing.JButton MakeMoveButton;
     private javax.swing.JComboBox<String> MoveDepth;
     private javax.swing.JComboBox<String> MoveFrom;
+    private javax.swing.JLabel PlayAreaTextOut;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
+    private javax.swing.JButton jButton30;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLayeredPane jLayeredPane10;
+    private javax.swing.JLayeredPane jLayeredPane11;
+    private javax.swing.JLayeredPane jLayeredPane12;
     private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JLayeredPane jLayeredPane3;
     private javax.swing.JLayeredPane jLayeredPane4;
