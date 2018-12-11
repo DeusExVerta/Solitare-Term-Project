@@ -12,7 +12,7 @@ import java.util.Stack;
 
 /**
  * TODO: WINNING THE GAME.
- * TODO: handle null pointer exception when moving all cards from pile to itself
+ * 
  * Restart Button.
  *
  * @author S0335108
@@ -20,7 +20,9 @@ import java.util.Stack;
 public class Solitare
 {
     public static void main(String args[])//void solitare
-    {       
+    {
+        //ShowPNG s=new ShowPNG();
+        
         boolean gamelive=true;
         Scanner sc = new Scanner(System.in);        
         SingleDeck singleDeck=new SingleDeck();
@@ -29,7 +31,7 @@ public class Solitare
         
         PlayArea p = new PlayArea(singleDeck,discard,score);
         
-        
+        //s.showcard(discard.peek());
         
         //System.out.print("["+discard.peek()+"]\n");
         System.out.print(p);
@@ -55,20 +57,27 @@ public class Solitare
                         break;
                     }else if(movearray[0].equals("SCORE"))//instead of shortcut give score and discard their own indecies
                     {
+                        movearray[0]="8";
+                        to=8;
                         if(movearray[1].equals("DISCARD"))
                         {
-                            if(score.Score(discard.peek()))
-                            {
-                                discard.pop();
-                            }
+                            from=7;
+                            depth=1;
+                            p.makeMove(to, from, depth);
+//                            if(score.Score(discard.peek()))
+//                            {
+//                                discard.pop();
+//                            }
                         }
                         else
                         {
                             from=Integer.parseInt(movearray[1]);
-                            score.Score(p.popTop(from));    
+                            p.makeMove(to, from, 1);
+//                            score.Score(p.popTop(from));    
                         }
                     }else if(movearray[0].equals("DRAW"))
                     {
+                        
                         if(singleDeck.isEmpty())
                         {
                             while(!discard.isEmpty())
@@ -100,6 +109,9 @@ public class Solitare
                         from=Integer.parseInt(movearray[1]);
                         depth=Integer.parseInt(movearray[2]);
                         p.makeMove(to,from,depth);
+                    }else
+                    {
+                        System.out.println("IllegalMove...");
                     }
             }catch(IndexOutOfBoundsException ex)
             {
@@ -109,6 +121,11 @@ public class Solitare
             catch(NumberFormatException ex)
             {
                 System.out.println("Invalid Input");
+                System.out.println(ex);
+            }
+            catch(IllegalArgumentException ex)
+            {
+                System.out.println("Invalid Input:");
                 System.out.println(ex);
             }
             
