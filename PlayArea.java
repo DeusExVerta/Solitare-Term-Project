@@ -74,7 +74,12 @@ public class PlayArea
         }
         discard.add(deck.draw());
     }
-
+    
+    public boolean isStackEmpty(int index)
+    {
+        return area.get(index).isEmpty();
+    }
+    
     //adds the card c to the top of the face up list at specified index 
     public boolean moveTo( int index, Card c )
     {
