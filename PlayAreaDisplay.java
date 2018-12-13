@@ -16,15 +16,14 @@ import javax.swing.JLabel;
 
 /**
  * TODO:
- *  Buttons in Empty space and button for score area.
- *  
- *  
+ * Buttons in Empty space and button for score area.
+ *
+ *
  * @author S0335108
  */
 public class PlayAreaDisplay extends javax.swing.JFrame
 {
-    
-    
+
     /** Creates new form PlayAreaDisplay */
     public PlayAreaDisplay()
     {
@@ -130,7 +129,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         scorelabels[1] = scoreSpades;
         scorelabels[2] = scoreClubs;
         scorelabels[3] = scoreDiamonds;
-        
+
         playareapanes[0] = Column1;
         playareapanes[1] = Column2;
         playareapanes[2] = Column3;
@@ -138,9 +137,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         playareapanes[4] = Column5;
         playareapanes[5] = Column6;
         playareapanes[6] = Column7;
-        
-        
-        
+
+        facedowns[0] = L1FaceDown;
         facedowns[1] = L2FaceDown;
         facedowns[2] = L3FaceDown;
         facedowns[3] = L4FaceDown;
@@ -148,16 +146,14 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         facedowns[5] = L6FaceDown;
         facedowns[6] = L7FaceDown;
 
-        
-        
-        int column =0;
+        int column = 0;
         for ( javax.swing.JButton[] buttonarray : buttons )
         {
-            int depth=0;
+            int depth = 0;
             for ( javax.swing.JButton button : buttonarray )
             {
                 button.setText("");
-                playareapanes[column].setLayer(button,depth);
+                playareapanes[column].setLayer(button, depth);
                 button.addActionListener(new CardButtonListener());
                 button.setVisible(false);
                 depth++;
@@ -166,12 +162,17 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         }
         discardButton.addActionListener(new CardButtonListener());
         
+        for(javax.swing.JButton button:facedowns)
+        {
+            button.addActionListener(new EmptyPileListener());
+        }
+        
         
         for ( int i = 0; i < 7; i++ )
         {
             columnDisplayUpdate(i);
         }
-       
+
     }
 
     SingleDeck singleDeck = new SingleDeck();
@@ -179,12 +180,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     Stack<Card> discard = new Stack<>();
     PlayArea playArea = new PlayArea(singleDeck, discard, score);
     javax.swing.JButton[][] buttons = new javax.swing.JButton[7][];
-    javax.swing.JLabel[] scorelabels=new javax.swing.JLabel[4];
-    javax.swing.JLabel[] facedowns=new javax.swing.JLabel[7];
-    javax.swing.JLayeredPane[] playareapanes= new javax.swing.JLayeredPane[7];
+    javax.swing.JLabel[] scorelabels = new javax.swing.JLabel[4];
+    javax.swing.JButton[] facedowns = new javax.swing.JButton[7];
+    javax.swing.JLayeredPane[] playareapanes = new javax.swing.JLayeredPane[7];
 
-    
-    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -202,7 +201,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        deckButton = new javax.swing.JButton();
         discardButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         Column1 = new javax.swing.JLayeredPane();
@@ -219,9 +218,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L1C3 = new javax.swing.JButton();
         L1C2 = new javax.swing.JButton();
         L1C1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        L1FaceDown = new javax.swing.JButton();
         Column2 = new javax.swing.JLayeredPane();
-        L2FaceDown = new javax.swing.JLabel();
         L2C5 = new javax.swing.JButton();
         L2C6 = new javax.swing.JButton();
         L2C7 = new javax.swing.JButton();
@@ -235,6 +233,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L2C4 = new javax.swing.JButton();
         L2C3 = new javax.swing.JButton();
         L2C1 = new javax.swing.JButton();
+        L2FaceDown = new javax.swing.JButton();
         Column4 = new javax.swing.JLayeredPane();
         L4C5 = new javax.swing.JButton();
         L4C6 = new javax.swing.JButton();
@@ -245,13 +244,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L4C11 = new javax.swing.JButton();
         L4C12 = new javax.swing.JButton();
         L4C13 = new javax.swing.JButton();
-        L4FaceDown = new javax.swing.JLabel();
         L4C4 = new javax.swing.JButton();
         L4C3 = new javax.swing.JButton();
         L4C2 = new javax.swing.JButton();
         L4C1 = new javax.swing.JButton();
+        L4FaceDown = new javax.swing.JButton();
         Column5 = new javax.swing.JLayeredPane();
-        L5FaceDown = new javax.swing.JLabel();
         L5C5 = new javax.swing.JButton();
         L5C6 = new javax.swing.JButton();
         L5C7 = new javax.swing.JButton();
@@ -265,6 +263,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L5C4 = new javax.swing.JButton();
         L5C3 = new javax.swing.JButton();
         L5C1 = new javax.swing.JButton();
+        L5FaceDown = new javax.swing.JButton();
         Column6 = new javax.swing.JLayeredPane();
         L6C5 = new javax.swing.JButton();
         L6C6 = new javax.swing.JButton();
@@ -275,16 +274,15 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L6C11 = new javax.swing.JButton();
         L6C12 = new javax.swing.JButton();
         L6C13 = new javax.swing.JButton();
-        L6FaceDown = new javax.swing.JLabel();
         L6C4 = new javax.swing.JButton();
         L6C3 = new javax.swing.JButton();
         L6C2 = new javax.swing.JButton();
         L6C1 = new javax.swing.JButton();
+        L6FaceDown = new javax.swing.JButton();
         Column7 = new javax.swing.JLayeredPane();
         L7C9 = new javax.swing.JButton();
         L7C10 = new javax.swing.JButton();
         L7C13 = new javax.swing.JButton();
-        L7FaceDown = new javax.swing.JLabel();
         L7C12 = new javax.swing.JButton();
         L7C11 = new javax.swing.JButton();
         L7C8 = new javax.swing.JButton();
@@ -295,8 +293,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L7C3 = new javax.swing.JButton();
         L7C2 = new javax.swing.JButton();
         L7C1 = new javax.swing.JButton();
+        L7FaceDown = new javax.swing.JButton();
         Column3 = new javax.swing.JLayeredPane();
-        L3FaceDown = new javax.swing.JLabel();
         L3C5 = new javax.swing.JButton();
         L3C6 = new javax.swing.JButton();
         L3C7 = new javax.swing.JButton();
@@ -310,8 +308,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         L3C4 = new javax.swing.JButton();
         L3C3 = new javax.swing.JButton();
         L3C1 = new javax.swing.JButton();
+        L3FaceDown = new javax.swing.JButton();
         MakeMoveButton = new javax.swing.JButton();
-        PlayAreaTextOut = new javax.swing.JLabel();
         scoreHearts = new javax.swing.JLabel();
         scoreSpades = new javax.swing.JLabel();
         scoreClubs = new javax.swing.JLabel();
@@ -341,12 +339,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
         jLabel3.setText("Number of Cards");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener()
+        deckButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        deckButton.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jButton1ActionPerformed(evt);
+                deckButtonActionPerformed(evt);
             }
         });
 
@@ -544,14 +542,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column1.add(L1C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 225, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        L1FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L1FaceDown.setEnabled(false);
+        Column1.add(L1FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
 
         Column2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        L2FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column2.add(L2FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, 212));
 
         L2C5.setText("1");
         L2C5.setBorderPainted(false);
@@ -735,6 +731,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column2.add(L2C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 230, -1, -1));
 
+        L2FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L2FaceDown.setEnabled(false);
+        Column2.add(L2FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         Column4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -864,9 +864,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column4.add(L4C13, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 566, -1, -1));
 
-        L4FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column4.add(L4FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
-
         L4C4.setText("1");
         L4C4.setBorderPainted(false);
         buttonGroup1.add(L4C4);
@@ -923,11 +920,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column4.add(L4C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 230, -1, -1));
 
+        L4FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L4FaceDown.setEnabled(false);
+        Column4.add(L4FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         Column5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        L5FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column5.add(L5FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, 212));
 
         L5C5.setText("1");
         L5C5.setBorderPainted(false);
@@ -1111,6 +1109,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column5.add(L5C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 230, -1, -1));
 
+        L5FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L5FaceDown.setEnabled(false);
+        Column5.add(L5FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         Column6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1240,9 +1242,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column6.add(L6C13, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 566, -1, -1));
 
-        L6FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column6.add(L6FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
-
         L6C4.setText("1");
         L6C4.setBorderPainted(false);
         buttonGroup1.add(L6C4);
@@ -1299,6 +1298,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column6.add(L6C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 230, -1, -1));
 
+        L6FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L6FaceDown.setEnabled(false);
+        Column6.add(L6FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         Column7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1343,9 +1346,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
         Column7.add(L7C13, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 566, -1, -1));
-
-        L7FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column7.add(L7FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
 
         L7C12.setText("1");
         L7C12.setBorderPainted(false);
@@ -1487,11 +1487,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column7.add(L7C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 228, -1, -1));
 
+        L7FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L7FaceDown.setEnabled(false);
+        Column7.add(L7FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         Column3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 0)));
         Column3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        L3FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
-        Column3.add(L3FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
 
         L3C5.setText("1");
         L3C5.setBorderPainted(false);
@@ -1675,6 +1676,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         });
         Column3.add(L3C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 230, -1, -1));
 
+        L3FaceDown.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
+        L3FaceDown.setEnabled(false);
+        Column3.add(L3FaceDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, -1));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -1720,8 +1725,6 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
         });
 
-        PlayAreaTextOut.setText("playAreaTextOut");
-
         scoreHearts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
 
         scoreSpades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/solitare/CardPNG/CardBack.png"))); // NOI18N
@@ -1746,7 +1749,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(deckButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(discardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)
@@ -1767,18 +1770,15 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                                             .addComponent(jLabel3)))
                                     .addComponent(MakeMoveButton)))
                             .addComponent(jScrollPane1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 62, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(scoreHearts)
-                                .addGap(18, 18, 18)
-                                .addComponent(scoreSpades)
-                                .addGap(18, 18, 18)
-                                .addComponent(scoreClubs)
-                                .addGap(18, 18, 18)
-                                .addComponent(scoreDiamonds))
-                            .addComponent(PlayAreaTextOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(scoreHearts)
+                        .addGap(18, 18, 18)
+                        .addComponent(scoreSpades)
+                        .addGap(18, 18, 18)
+                        .addComponent(scoreClubs)
+                        .addGap(18, 18, 18)
+                        .addComponent(scoreDiamonds)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1800,11 +1800,10 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(deckButton, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(discardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(PlayAreaTextOut, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(scoreHearts)
                             .addComponent(scoreSpades)
@@ -1818,10 +1817,27 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void setIndecies(int indexfrom,int depth)
+    private void setIndecies( int indexfrom, int depth )
     {
         MoveFrom.setSelectedIndex(indexfrom);
-        MoveDepth.setSelectedIndex(depth-1);
+        MoveDepth.setSelectedIndex(depth - 1);
+    }
+    private class EmptyPileListener implements ActionListener
+    {
+        @Override
+        public void actionPerformed( ActionEvent e )
+        {
+            int mod = e.getModifiers();
+            boolean shift = ( ( mod & ActionEvent.SHIFT_MASK ) != 0 );
+            for(int i=0;i<facedowns.length;i++)
+            {
+                if(e.getSource().equals(facedowns[i])&&shift)
+                {
+                    moveTo.setSelectedIndex(i);
+                    MakeMoveButton.doClick();
+                }
+            }
+        }
     }
     
     private class CardButtonListener implements ActionListener
@@ -1829,53 +1845,56 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         @Override
         public void actionPerformed( ActionEvent e )
         {
-            javax.swing.JButton button=(javax.swing.JButton) e.getSource();
-            int mod=e.getModifiers();
-            boolean shift = ((mod & ActionEvent.SHIFT_MASK) != 0);
-            boolean ctrl = ((mod & ActionEvent.CTRL_MASK) != 0);
-            if(e.getSource().equals(discardButton))
+            javax.swing.JButton button = ( javax.swing.JButton ) e.getSource();
+            int mod = e.getModifiers();
+            boolean shift = ( ( mod & ActionEvent.SHIFT_MASK ) != 0 );
+            boolean ctrl = ( ( mod & ActionEvent.CTRL_MASK ) != 0 );
+            if ( e.getSource().equals(discardButton) )
             {
-                    if(ctrl)
-                    {
-                        moveTo.setSelectedIndex(8);
-                        MoveFrom.setSelectedIndex(7);
-                        MakeMoveButton.doClick();
-                    }else
-                    {
-                        setIndecies(7, 1);
-                    }
-            }
-            for(int i=0;i<buttons.length;i++)
-            {
-                for(int j=0;j<buttons[i].length;j++)
+                if ( ctrl )
                 {
-                    if(button.equals(buttons[i][j]))
-                    {
-                    
-                    if(shift)
-                    {
-                        moveTo.setSelectedIndex(i);
-                        MakeMoveButton.doClick();
-                    }else if(ctrl)
-                    {
-                        moveTo.setSelectedIndex(8);
-                        MoveFrom.setSelectedIndex(i);
-                        MakeMoveButton.doClick();
-                    }else
-                    {
-                        setIndecies( i, playArea.areaUp.get(i).size()-j);
-                    }
-                    }
-                    
+                    moveTo.setSelectedIndex(8);
+                    MoveFrom.setSelectedIndex(7);
+                    MakeMoveButton.doClick();
+                }
+                else
+                {
+                    setIndecies(7, 1);
                 }
             }
-            
+            for ( int i = 0; i < buttons.length; i++ )
+            {
+                for ( int j = 0; j < buttons[i].length; j++ )
+                {
+                    if ( button.equals(buttons[i][j]) )
+                    {
+
+                        if ( shift )
+                        {
+                            moveTo.setSelectedIndex(i);
+                            MakeMoveButton.doClick();
+                        }
+                        else if ( ctrl )
+                        {
+                            moveTo.setSelectedIndex(8);
+                            MoveFrom.setSelectedIndex(i);
+                            MakeMoveButton.doClick();
+                        }
+                        else
+                        {
+                            setIndecies(i, playArea.areaUp.get(i).size() - j);
+                        }
+                    }
+
+                }
+            }
+
         }
     }
-    
-    
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
-    {//GEN-HEADEREND:event_jButton1ActionPerformed
+
+
+    private void deckButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_deckButtonActionPerformed
+    {//GEN-HEADEREND:event_deckButtonActionPerformed
 
         try
         {
@@ -1886,7 +1905,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                     singleDeck.push(discard.pop());
                 }
             }
-            if(!singleDeck.isEmpty()){
+            if ( !singleDeck.isEmpty() )
+            {
                 discard.push(singleDeck.draw());
             }
             ImageIcon icon = new ImageIcon(playArea.peekDiscard().getFace());
@@ -1897,12 +1917,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
         }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_deckButtonActionPerformed
 
     private void columnDisplayUpdate( int index )
     {
         int i = 0;
-        if ( 6 >= index && index >= 0 )
+        if ( 6 >= index && index >= 0 )//card pile Icon handling
         {
             for ( Card c : playArea.areaUp.get(index) )
             {
@@ -1926,7 +1946,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                 buttons[index][i].setVisible(false);
             }
         }
-        else if ( index == 7 )
+        else if ( index == 7 )//discard icon handling
         {
             try
             {
@@ -1935,14 +1955,17 @@ public class PlayAreaDisplay extends javax.swing.JFrame
             }
             catch ( Exception ex )
             {
-
+                ImageIcon icon = new ImageIcon(this.getClass().getResource("").getPath() +
+                  "\\CardPNG\\CardBack.png");
+                discardButton.setIcon(icon);
+                discardButton.setEnabled(false);
             }
         }
-        else if (index==8)
+        else if ( index == 8 )//score icon handling
         {
             try
             {
-                for(int k=0;k<4;k++)
+                for ( int k = 0; k < 4; k++ )
                 {
                     ImageIcon icon = new ImageIcon(score.area.get(k).peek().getFace());
                     scorelabels[k].setIcon(icon);
@@ -1961,12 +1984,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
         int indexFrom = MoveFrom.getSelectedIndex();
         playArea.makeMove(indexTo, indexFrom, MoveDepth.
           getSelectedIndex() + 1);
-        PlayAreaTextOut.setText(playArea.toString());
         columnDisplayUpdate(indexTo);
         columnDisplayUpdate(indexFrom);
-        if ( indexFrom <= 6 && indexFrom > 0 & playArea.isStackEmpty(indexFrom) )
+        if ( indexFrom <= 6 && indexFrom >= 0 & playArea.isStackEmpty(indexFrom) )
         {
-            facedowns[indexFrom].setVisible(false);
+            //facedowns[indexFrom].setVisible(false);
+            facedowns[indexFrom].setEnabled(true);
         }
     }//GEN-LAST:event_MakeMoveButtonActionPerformed
 
@@ -1980,9 +2003,9 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                 MoveDepth.addItem(discard.peek().toString());
                 break;
             default:
-                for ( int i=0; i< playArea.areaUp.get(selection).size();i++ )
+                for ( int i = 0; i < playArea.areaUp.get(selection).size(); i++ )
                 {
-                    MoveDepth.addItem(""+(i+1));
+                    MoveDepth.addItem("" + ( i + 1 ));
                 }
                 break;
         }
@@ -1990,12 +2013,12 @@ public class PlayAreaDisplay extends javax.swing.JFrame
 
     private void discardButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_discardButtonActionPerformed
     {//GEN-HEADEREND:event_discardButtonActionPerformed
-       
+
     }//GEN-LAST:event_discardButtonActionPerformed
 
     private void L3C1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C1ActionPerformed
     {//GEN-HEADEREND:event_L3C1ActionPerformed
-        
+
     }//GEN-LAST:event_L3C1ActionPerformed
 
     private void L3C2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_L3C2ActionPerformed
@@ -2516,6 +2539,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L1C7;
     private javax.swing.JButton L1C8;
     private javax.swing.JButton L1C9;
+    private javax.swing.JButton L1FaceDown;
     private javax.swing.JButton L2C1;
     private javax.swing.JButton L2C10;
     private javax.swing.JButton L2C11;
@@ -2529,7 +2553,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L2C7;
     private javax.swing.JButton L2C8;
     private javax.swing.JButton L2C9;
-    private javax.swing.JLabel L2FaceDown;
+    private javax.swing.JButton L2FaceDown;
     private javax.swing.JButton L3C1;
     private javax.swing.JButton L3C10;
     private javax.swing.JButton L3C11;
@@ -2543,7 +2567,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L3C7;
     private javax.swing.JButton L3C8;
     private javax.swing.JButton L3C9;
-    private javax.swing.JLabel L3FaceDown;
+    private javax.swing.JButton L3FaceDown;
     private javax.swing.JButton L4C1;
     private javax.swing.JButton L4C10;
     private javax.swing.JButton L4C11;
@@ -2557,7 +2581,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L4C7;
     private javax.swing.JButton L4C8;
     private javax.swing.JButton L4C9;
-    private javax.swing.JLabel L4FaceDown;
+    private javax.swing.JButton L4FaceDown;
     private javax.swing.JButton L5C1;
     private javax.swing.JButton L5C10;
     private javax.swing.JButton L5C11;
@@ -2571,7 +2595,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L5C7;
     private javax.swing.JButton L5C8;
     private javax.swing.JButton L5C9;
-    private javax.swing.JLabel L5FaceDown;
+    private javax.swing.JButton L5FaceDown;
     private javax.swing.JButton L6C1;
     private javax.swing.JButton L6C10;
     private javax.swing.JButton L6C11;
@@ -2585,7 +2609,7 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L6C7;
     private javax.swing.JButton L6C8;
     private javax.swing.JButton L6C9;
-    private javax.swing.JLabel L6FaceDown;
+    private javax.swing.JButton L6FaceDown;
     private javax.swing.JButton L7C1;
     private javax.swing.JButton L7C10;
     private javax.swing.JButton L7C11;
@@ -2599,15 +2623,13 @@ public class PlayAreaDisplay extends javax.swing.JFrame
     private javax.swing.JButton L7C7;
     private javax.swing.JButton L7C8;
     private javax.swing.JButton L7C9;
-    private javax.swing.JLabel L7FaceDown;
+    private javax.swing.JButton L7FaceDown;
     private javax.swing.JButton MakeMoveButton;
     private javax.swing.JComboBox<String> MoveDepth;
     private javax.swing.JComboBox<String> MoveFrom;
-    private javax.swing.JLabel PlayAreaTextOut;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton deckButton;
     private javax.swing.JButton discardButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
