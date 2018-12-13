@@ -137,8 +137,7 @@ public class PlayArea
     }
 
     //TODO move from discard and to score area
-    //BUG move to empty, invalid move crashes the program
-    //BUG to Score From Empty causes crash
+    //BUG 
     public void makeMove( int to, int from, int depth )
     {
 
