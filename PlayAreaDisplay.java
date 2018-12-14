@@ -1959,6 +1959,8 @@ public class PlayAreaDisplay extends javax.swing.JFrame
                   "\\CardPNG\\CardBack.png");
                 discardButton.setIcon(icon);
                 discardButton.setEnabled(false);
+				deckButton.setIcon(icon);
+				deckButton.setEnabled(false);
             }
         }
         else if ( index == 8 )//score icon handling
